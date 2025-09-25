@@ -18,6 +18,7 @@ import {
   X
 } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -266,14 +267,14 @@ export default function Home() {
               </div>
             </div>
             <div className="relative">
-              <div className="hampton-image-hero mb-6 relative">
-                <div className="absolute inset-0 hampton-gradient-overlay opacity-20 rounded-lg"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <Shield className="h-16 w-16 mx-auto mb-4 opacity-80" />
-                    <p className="text-lg font-medium opacity-90">Professional Safety Consultation</p>
-                  </div>
-                </div>
+              <div className="mb-6 relative">
+                <Image
+                  src="/images/why-choose-us.png"
+                  alt="Why businesses choose our people-first approach"
+                  width={600}
+                  height={400}
+                  className="rounded-lg w-full h-auto object-cover"
+                />
               </div>
               <Card className="hampton-card-premium">
                 <CardHeader>
