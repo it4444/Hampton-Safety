@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 import { motion } from 'framer-motion'
 import {
   Shield,
@@ -22,7 +23,7 @@ export default function About() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 to-white py-20">
+      <section className="relative bg-gradient-to-br from-hampton-light to-white py-20">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -33,11 +34,11 @@ export default function About() {
             <Badge className="mb-4" variant="secondary">
               About Hampton Safety Ltd
             </Badge>
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="hampton-heading-xl text-gray-900 mb-6">
               Every Workplace Should Be a
-              <span className="text-blue-600"> Safe One</span>
+              <span className="text-hampton-blue"> Safe One</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="hampton-body-lg mb-8">
               At Hampton Safety Ltd, we believe that a safer workplace is a more successful one.
               We're driven by a commitment to deliver personalised health and safety services
               that help businesses thrive while meeting regulatory standards.
@@ -52,11 +53,11 @@ export default function About() {
           <div className="grid lg:grid-cols-3 gap-12">
             <Card className="text-center">
               <CardHeader>
-                <Target className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <Target className="h-12 w-12 text-hampton-blue mx-auto mb-4" />
                 <CardTitle>Our Mission</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">
+                <p className="hampton-body">
                   Our core belief is that a safer workplace is a more successful one. We help each
                   organisation understand what is required to achieve and maintain a safe working environment.
                 </p>
@@ -65,11 +66,11 @@ export default function About() {
 
             <Card className="text-center">
               <CardHeader>
-                <Heart className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <Heart className="h-12 w-12 text-hampton-blue mx-auto mb-4" />
                 <CardTitle>Our Approach</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">
+                <p className="hampton-body">
                   We take a people-first approach, offering bespoke solutions designed to fit your
                   operational requirements. We&apos;re here to build lasting partnerships that protect your people.
                 </p>
@@ -78,11 +79,11 @@ export default function About() {
 
             <Card className="text-center">
               <CardHeader>
-                <Building className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                <Building className="h-12 w-12 text-hampton-blue mx-auto mb-4" />
                 <CardTitle>Our Experience</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600">
+                <p className="hampton-body">
                   With years of experience on complex projects including London Underground and
                   national rail networks, we bring expertise to every client we work with.
                 </p>
@@ -96,49 +97,49 @@ export default function About() {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            <h2 className="hampton-heading-lg text-gray-900 mb-8 text-center">
               Comprehensive Health & Safety Services
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h3 className="font-bold text-xl mb-4 flex items-center">
-                  <Shield className="mr-2 h-5 w-5 text-blue-600" />
+                <h3 className="hampton-heading-md mb-4 flex items-center">
+                  <Shield className="mr-2 h-5 w-5 text-hampton-blue" />
                   Consultancy Services
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="hampton-body mb-4">
                   Appoint Hampton Safety Ltd as your retained Health and Safety consultant to help
                   fulfil your statutory requirements with regular site visits and compliance monitoring.
                 </p>
               </div>
 
               <div>
-                <h3 className="font-bold text-xl mb-4 flex items-center">
-                  <CheckCircle className="mr-2 h-5 w-5 text-blue-600" />
+                <h3 className="hampton-heading-md mb-4 flex items-center">
+                  <CheckCircle className="mr-2 h-5 w-5 text-hampton-blue" />
                   Safety Audits & Risk Assessments
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="hampton-body mb-4">
                   We conduct comprehensive assessments to identify potential risks and recommend
                   measures to mitigate them, ensuring compliance with current legislation.
                 </p>
               </div>
 
               <div>
-                <h3 className="font-bold text-xl mb-4 flex items-center">
-                  <Award className="mr-2 h-5 w-5 text-blue-600" />
-                  ISO 45001 Certification Support
+                <h3 className="hampton-heading-md mb-4 flex items-center">
+                  <Award className="mr-2 h-5 w-5 text-hampton-blue" />
+                  Management Systems Support
                 </h3>
-                <p className="text-gray-600 mb-4">
-                  Achieving industry-standard certifications like ISO 45001 proves your commitment
-                  to safety and enhances your competitiveness in tenders and prequalifications.
+                <p className="hampton-body mb-4">
+                  Achieving industry-standard management system certifications proves your commitment
+                  to best practice and enhances your competitiveness in tenders and prequalifications.
                 </p>
               </div>
 
               <div>
-                <h3 className="font-bold text-xl mb-4 flex items-center">
-                  <Users className="mr-2 h-5 w-5 text-blue-600" />
+                <h3 className="hampton-heading-md mb-4 flex items-center">
+                  <Users className="mr-2 h-5 w-5 text-hampton-blue" />
                   Training Programmes
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="hampton-body mb-4">
                   We are a licensed training centre for IOSH with regular Managing Safely courses.
                   We also offer many shorter courses tailored to suit your exact requirements.
                 </p>
@@ -152,10 +153,10 @@ export default function About() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
+            <h2 className="hampton-heading-lg text-gray-900 mb-8">
               Experience & Expertise
             </h2>
-            <p className="text-xl text-gray-600 mb-12">
+            <p className="hampton-body-lg mb-12">
               With years of experience, Hampton Safety Ltd has worked on some of the UK's most complex
               and high-risk projects, including major infrastructure initiatives ranging from the London
               Underground and national rail networks through to smaller companies working in construction and retail.
@@ -163,15 +164,15 @@ export default function About() {
 
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">15+</div>
+                <div className="text-3xl font-bold text-hampton-blue mb-2">15+</div>
                 <div className="text-gray-600">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">100+</div>
+                <div className="text-3xl font-bold text-hampton-blue mb-2">100+</div>
                 <div className="text-gray-600">Projects Completed</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600 mb-2">IOSH</div>
+                <div className="text-3xl font-bold text-hampton-blue mb-2">IOSH</div>
                 <div className="text-gray-600">Accredited Training</div>
               </div>
             </div>
@@ -180,18 +181,18 @@ export default function About() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-blue-50">
+      <section className="py-20 bg-hampton-light">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            <h2 className="hampton-heading-lg text-gray-900 mb-8 text-center">
               Why Choose Hampton Safety?
             </h2>
             <div className="space-y-6">
               <div className="flex items-start">
-                <CheckCircle className="h-6 w-6 text-green-500 mt-1 mr-4 flex-shrink-0" />
+                <CheckCircle className="h-6 w-6 text-hampton-green mt-1 mr-4 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">Personalised Touch</h3>
-                  <p className="text-gray-600">
+                  <p className="hampton-body">
                     While many companies offer off-the-shelf solutions, we believe that health and safety
                     needs a personal touch. Our consultants take the time to understand your specific business needs.
                   </p>
@@ -199,10 +200,10 @@ export default function About() {
               </div>
 
               <div className="flex items-start">
-                <CheckCircle className="h-6 w-6 text-green-500 mt-1 mr-4 flex-shrink-0" />
+                <CheckCircle className="h-6 w-6 text-hampton-green mt-1 mr-4 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">Proven Track Record</h3>
-                  <p className="text-gray-600">
+                  <p className="hampton-body">
                     Our reputation has been built on years of reliable service, with much of our business
                     coming through referrals and recommendations from satisfied clients.
                   </p>
@@ -210,10 +211,10 @@ export default function About() {
               </div>
 
               <div className="flex items-start">
-                <CheckCircle className="h-6 w-6 text-green-500 mt-1 mr-4 flex-shrink-0" />
+                <CheckCircle className="h-6 w-6 text-hampton-green mt-1 mr-4 flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">Industry Expertise</h3>
-                  <p className="text-gray-600">
+                  <p className="hampton-body">
                     Extensive experience in various sectors, including construction, manufacturing, and housing,
                     with work on critical infrastructure projects where stringent safety standards are paramount.
                   </p>
@@ -228,10 +229,10 @@ export default function About() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
+            <h2 className="hampton-heading-lg text-gray-900 mb-8">
               Accreditations and Trust
             </h2>
-            <p className="text-xl text-gray-600 mb-12">
+            <p className="hampton-body-lg mb-12">
               Hampton Safety Ltd is fully accredited by recognised industry bodies such as IOSH.
               Our training courses and consultancy services meet the highest standards of safety and compliance.
             </p>
@@ -239,8 +240,7 @@ export default function About() {
             <div className="grid md:grid-cols-4 gap-8">
               <Card className="text-center">
                 <CardContent className="pt-6">
-                  <Award className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                  <div className="font-semibold">IOSH</div>
+                  <Award className="h-8 w-8 text-hampton-blue mx-auto mb-2" />
                   <div className="text-sm text-gray-600">Licensed Training Centre</div>
                 </CardContent>
               </Card>
@@ -285,6 +285,8 @@ export default function About() {
           </Button>
         </div>
       </section>
+
+      <Footer />
     </div>
   )
 }

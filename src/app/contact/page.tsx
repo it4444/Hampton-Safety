@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 import { motion } from 'framer-motion'
 import {
   Phone,
@@ -21,7 +22,7 @@ export default function Contact() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 to-white py-20">
+      <section className="relative bg-gradient-to-br from-hampton-light to-white py-20">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -32,11 +33,11 @@ export default function Contact() {
             <Badge className="mb-4" variant="secondary">
               Get In Touch
             </Badge>
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="hampton-heading-xl text-gray-900 mb-6">
               Let's Make Your Workplace
-              <span className="text-blue-600"> Safer Together</span>
+              <span className="text-hampton-blue"> Safer Together</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="hampton-body-lg mb-8">
               Whether you're looking for expert health and safety advice, tailored consultancy services,
               or accredited training programs, our team is here to help. Start with a free consultation.
             </p>
@@ -50,17 +51,17 @@ export default function Contact() {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-8">
+              <h2 className="hampton-heading-lg text-gray-900 mb-8">
                 Contact Information
               </h2>
 
               <div className="space-y-6">
                 <Card>
                   <CardContent className="flex items-center p-6">
-                    <Phone className="h-8 w-8 text-blue-600 mr-4" />
+                    <Phone className="h-8 w-8 text-hampton-blue mr-4" />
                     <div>
-                      <h3 className="font-semibold text-lg">Phone</h3>
-                      <p className="text-gray-600">[Insert Phone Number]</p>
+                      <h3 className="hampton-heading-md">Phone</h3>
+                      <p className="hampton-body">[Insert Phone Number]</p>
                       <p className="text-sm text-gray-500">Call for immediate consultation</p>
                     </div>
                   </CardContent>
@@ -68,10 +69,10 @@ export default function Contact() {
 
                 <Card>
                   <CardContent className="flex items-center p-6">
-                    <Mail className="h-8 w-8 text-blue-600 mr-4" />
+                    <Mail className="h-8 w-8 text-hampton-blue mr-4" />
                     <div>
-                      <h3 className="font-semibold text-lg">Email</h3>
-                      <p className="text-gray-600">[Insert Email Address]</p>
+                      <h3 className="hampton-heading-md">Email</h3>
+                      <p className="hampton-body">[Insert Email Address]</p>
                       <p className="text-sm text-gray-500">We respond within 24 hours</p>
                     </div>
                   </CardContent>
@@ -79,10 +80,10 @@ export default function Contact() {
 
                 <Card>
                   <CardContent className="flex items-center p-6">
-                    <MapPin className="h-8 w-8 text-blue-600 mr-4" />
+                    <MapPin className="h-8 w-8 text-hampton-blue mr-4" />
                     <div>
-                      <h3 className="font-semibold text-lg">Office Address</h3>
-                      <p className="text-gray-600">[Insert Address]</p>
+                      <h3 className="hampton-heading-md">Office Address</h3>
+                      <p className="hampton-body">[Insert Address]</p>
                       <p className="text-sm text-gray-500">Serving businesses across the UK</p>
                     </div>
                   </CardContent>
@@ -90,10 +91,10 @@ export default function Contact() {
 
                 <Card>
                   <CardContent className="flex items-center p-6">
-                    <Clock className="h-8 w-8 text-blue-600 mr-4" />
+                    <Clock className="h-8 w-8 text-hampton-blue mr-4" />
                     <div>
-                      <h3 className="font-semibold text-lg">Business Hours</h3>
-                      <p className="text-gray-600">Monday - Friday: 9:00 AM - 5:00 PM</p>
+                      <h3 className="hampton-heading-md">Business Hours</h3>
+                      <p className="hampton-body">Monday - Friday: 9:00 AM - 5:00 PM</p>
                       <p className="text-sm text-gray-500">Emergency support available</p>
                     </div>
                   </CardContent>
@@ -111,7 +112,8 @@ export default function Contact() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <form className="space-y-4">
+                  <form name="contact" method="POST" data-netlify="true" className="space-y-4">
+                    <input type="hidden" name="form-name" value="contact" />
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -119,7 +121,9 @@ export default function Contact() {
                         </label>
                         <input
                           type="text"
-                          className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                          name="firstName"
+                          required
+                          className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-hampton-blue focus:border-transparent"
                           placeholder="Your first name"
                         />
                       </div>
@@ -129,7 +133,9 @@ export default function Contact() {
                         </label>
                         <input
                           type="text"
-                          className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                          name="lastName"
+                          required
+                          className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-hampton-blue focus:border-transparent"
                           placeholder="Your last name"
                         />
                       </div>
@@ -141,7 +147,9 @@ export default function Contact() {
                       </label>
                       <input
                         type="text"
-                        className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        name="company"
+                        required
+                        className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-hampton-blue focus:border-transparent"
                         placeholder="Your company name"
                       />
                     </div>
@@ -153,7 +161,9 @@ export default function Contact() {
                         </label>
                         <input
                           type="email"
-                          className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                          name="email"
+                          required
+                          className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-hampton-blue focus:border-transparent"
                           placeholder="your.email@company.com"
                         />
                       </div>
@@ -163,7 +173,8 @@ export default function Contact() {
                         </label>
                         <input
                           type="tel"
-                          className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                          name="phone"
+                          className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-hampton-blue focus:border-transparent"
                           placeholder="Your phone number"
                         />
                       </div>
@@ -173,8 +184,7 @@ export default function Contact() {
                       <label className="block text-sm font-medium text-gray-700 mb-1">
                         Industry
                       </label>
-                      <select className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                        <option value="">Select your industry</option>
+                      <select name="industry" className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-hampton-blue focus:border-transparent">
                         <option value="construction">Construction</option>
                         <option value="manufacturing">Manufacturing</option>
                         <option value="healthcare">Healthcare</option>
@@ -189,11 +199,11 @@ export default function Contact() {
                       <label className="block text-sm font-medium text-gray-700 mb-1">
                         Service Interest
                       </label>
-                      <select className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                      <select name="service" className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-hampton-blue focus:border-transparent">
                         <option value="">What service are you interested in?</option>
                         <option value="consultancy">Health & Safety Consultancy</option>
                         <option value="risk-assessment">Risk Assessments & Audits</option>
-                        <option value="iso-certification">ISO 45001 Certification</option>
+                        <option value="iso-certification">Management Systems Support</option>
                         <option value="training">Safety Training</option>
                         <option value="general">General Enquiry</option>
                       </select>
@@ -204,8 +214,10 @@ export default function Contact() {
                         Message *
                       </label>
                       <textarea
+                        name="message"
                         rows={4}
-                        className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        required
+                        className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-hampton-blue focus:border-transparent"
                         placeholder="Tell us about your health and safety requirements..."
                       ></textarea>
                     </div>
@@ -222,10 +234,10 @@ export default function Contact() {
       </section>
 
       {/* Free Consultation Benefits */}
-      <section className="py-20 bg-blue-50">
+      <section className="py-20 bg-hampton-light">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+            <h2 className="hampton-heading-lg text-gray-900 mb-8 text-center">
               What to Expect from Your Free Consultation
             </h2>
 
@@ -236,7 +248,7 @@ export default function Contact() {
                   <CardTitle>30-Minute Session</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600">
+                  <p className="hampton-body">
                     Comprehensive discussion of your health and safety needs and current compliance status.
                   </p>
                 </CardContent>
@@ -244,11 +256,11 @@ export default function Contact() {
 
               <Card className="text-center">
                 <CardHeader>
-                  <CheckCircle className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                  <CheckCircle className="h-12 w-12 text-hampton-green mx-auto mb-4" />
                   <CardTitle>Expert Assessment</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600">
+                  <p className="hampton-body">
                     Professional evaluation of your requirements with actionable recommendations.
                   </p>
                 </CardContent>
@@ -260,7 +272,7 @@ export default function Contact() {
                   <CardTitle>Tailored Proposal</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-gray-600">
+                  <p className="hampton-body">
                     Customized solution proposal with transparent pricing and clear next steps.
                   </p>
                 </CardContent>
@@ -268,7 +280,7 @@ export default function Contact() {
             </div>
 
             <div className="text-center mt-12">
-              <div className="inline-flex items-center space-x-2 text-green-600 mb-4">
+              <div className="inline-flex items-center space-x-2 text-hampton-green mb-4">
                 <CheckCircle className="h-5 w-5" />
                 <span className="font-medium">No obligation • Same-day response • Expert guidance</span>
               </div>
@@ -281,10 +293,10 @@ export default function Contact() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">
+            <h2 className="hampton-heading-lg text-gray-900 mb-8">
               Serving Businesses Across the UK
             </h2>
-            <p className="text-xl text-gray-600 mb-12">
+            <p className="hampton-body-lg mb-12">
               We serve businesses across the UK with offices in [Insert Cities/Regions].
               No matter where you are located, we're ready to bring our health and safety expertise to your doorstep.
             </p>
@@ -292,10 +304,10 @@ export default function Contact() {
             <div className="grid md:grid-cols-2 gap-8">
               <Card>
                 <CardHeader>
-                  <CardTitle>On-Site Services</CardTitle>
+                  <CardTitle>On-site Services</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="text-left space-y-2 text-gray-600">
+                  <ul className="text-left space-y-2 hampton-body">
                     <li>• Site visits and assessments</li>
                     <li>• On-site training delivery</li>
                     <li>• Risk assessment walkthroughs</li>
@@ -309,7 +321,7 @@ export default function Contact() {
                   <CardTitle>Remote Support</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="text-left space-y-2 text-gray-600">
+                  <ul className="text-left space-y-2 hampton-body">
                     <li>• Virtual consultations</li>
                     <li>• Document reviews</li>
                     <li>• Policy development</li>
@@ -336,12 +348,14 @@ export default function Contact() {
             <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-gray-900">
               Call Now
             </Button>
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+            <Button size="lg" className="bg-hampton-green hover:bg-hampton-green/90 text-white">
               Schedule Consultation
             </Button>
           </div>
         </div>
       </section>
+
+      <Footer />
     </div>
   )
 }

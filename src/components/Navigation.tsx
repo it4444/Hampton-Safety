@@ -16,50 +16,52 @@ import { Phone, Mail } from 'lucide-react'
 export default function Navigation() {
   return (
     <header className="border-b bg-white sticky top-0 z-50">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
+      <div className="container mx-auto px-4 py-2">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
               src="/logos/Logo_black_text.fw.png"
               alt="Hampton Safety Ltd"
-              width={200}
-              height={50}
-              className="h-10 w-auto"
+              width={250}
+              height={63}
+              className="h-16 w-auto"
             />
           </Link>
 
-          {/* Desktop Navigation */}
-          <NavigationMenu className="hidden md:flex">
+          {/* Right side - Navigation and CTA */}
+          <div className="flex items-center space-x-8">
+            {/* Desktop Navigation */}
+            <NavigationMenu className="hidden md:flex">
             <NavigationMenuList>
               <NavigationMenuItem>
-                <Link href="/" legacyBehavior passHref>
-                  <NavigationMenuLink className="px-4 py-2 text-sm font-medium text-gray-900 hover:text-blue-600">
+                <NavigationMenuLink asChild>
+                  <Link href="/" className="px-4 py-2 text-base font-medium text-gray-900 hover:text-hampton-blue">
                     Home
-                  </NavigationMenuLink>
-                </Link>
+                  </Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-sm font-medium">Services</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="px-4 py-2 text-base font-medium">Services</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <div className="w-80 p-4">
-                    <div className="grid gap-2">
-                      <Link href="/services/consultancy" className="block p-2 hover:bg-gray-50 rounded">
-                        <div className="font-medium text-blue-600">Health & Safety Consultancy</div>
-                        <div className="text-sm text-gray-600">Retained consultant services & compliance</div>
+                  <div className="w-96 p-6">
+                    <div className="grid gap-3">
+                      <Link href="/services/consultancy" className="block p-4 hover:bg-gray-50 rounded-lg">
+                        <div className="font-semibold text-lg text-hampton-blue">Health & Safety Consultancy</div>
+                        <div className="text-base text-gray-600 mt-1">Retained consultant services & compliance</div>
                       </Link>
-                      <Link href="/services/risk-assessments" className="block p-2 hover:bg-gray-50 rounded">
-                        <div className="font-medium text-blue-600">Risk Assessments & Audits</div>
-                        <div className="text-sm text-gray-600">Comprehensive workplace risk evaluation</div>
+                      <Link href="/services/risk-assessments" className="block p-4 hover:bg-gray-50 rounded-lg">
+                        <div className="font-semibold text-lg text-hampton-blue">Risk Assessments & Audits</div>
+                        <div className="text-base text-gray-600 mt-1">Comprehensive workplace risk evaluation</div>
                       </Link>
-                      <Link href="/services/iso-certification" className="block p-2 hover:bg-gray-50 rounded">
-                        <div className="font-medium text-blue-600">ISO 45001 Certification</div>
-                        <div className="text-sm text-gray-600">Achieve industry-standard certifications</div>
+                      <Link href="/services/iso-certification" className="block p-4 hover:bg-gray-50 rounded-lg">
+                        <div className="font-semibold text-lg text-hampton-blue">Management Systems</div>
+                        <div className="text-base text-gray-600 mt-1">ISO-aligned management system support</div>
                       </Link>
-                      <Link href="/services/training" className="block p-2 hover:bg-gray-50 rounded">
-                        <div className="font-medium text-blue-600">Safety Training</div>
-                        <div className="text-sm text-gray-600">IOSH-accredited courses & face-fit testing</div>
+                      <Link href="/services/training" className="block p-4 hover:bg-gray-50 rounded-lg">
+                        <div className="font-semibold text-lg text-hampton-blue">Safety Training</div>
+                        <div className="text-base text-gray-600 mt-1">IOSH-accredited courses & face-fit testing</div>
                       </Link>
                     </div>
                   </div>
@@ -67,31 +69,26 @@ export default function Navigation() {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link href="/about" legacyBehavior passHref>
-                  <NavigationMenuLink className="px-4 py-2 text-sm font-medium text-gray-900 hover:text-blue-600">
+                <NavigationMenuLink asChild>
+                  <Link href="/about" className="px-4 py-2 text-base font-medium text-gray-900 hover:text-hampton-blue">
                     About
-                  </NavigationMenuLink>
-                </Link>
+                  </Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link href="/contact" legacyBehavior passHref>
-                  <NavigationMenuLink className="px-4 py-2 text-sm font-medium text-gray-900 hover:text-blue-600">
+                <NavigationMenuLink asChild>
+                  <Link href="/contact" className="px-4 py-2 text-base font-medium text-gray-900 hover:text-hampton-blue">
                     Contact
-                  </NavigationMenuLink>
-                </Link>
+                  </Link>
+                </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
 
-          {/* CTA Button */}
-          <div className="hidden md:flex items-center space-x-4">
-            <div className="flex items-center text-sm text-gray-600">
-              <Phone className="h-4 w-4 mr-1" />
-              <span>Call for consultation</span>
-            </div>
-            <Button asChild>
-              <Link href="/contact">Get Quote</Link>
+            {/* CTA Button */}
+            <Button asChild size="sm" className="text-base px-4 py-2">
+              <Link href="/contact">Get Consultation</Link>
             </Button>
           </div>
         </div>

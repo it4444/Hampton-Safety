@@ -51,6 +51,20 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Hampton Safety Brand Colors - Updated
+        hampton: {
+          navy: "hsl(var(--hampton-navy))",
+          blue: "hsl(var(--hampton-blue))",
+          medium: "hsl(var(--hampton-medium))",
+          green: "hsl(var(--hampton-green))",
+          light: "hsl(var(--hampton-light))",
+          dark: "hsl(var(--hampton-dark))",
+        },
+      },
+      fontFamily: {
+        sans: ['var(--font-inter)', 'Inter', 'system-ui', 'sans-serif'],
+        serif: ['var(--font-lora)', 'Lora', 'Georgia', 'serif'],
+        heading: ['var(--font-lora)', 'Lora', 'Georgia', 'serif'],
       },
       borderRadius: {
         lg: "var(--radius)",

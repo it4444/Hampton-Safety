@@ -1,21 +1,25 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Lora } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// Modern, professional sans-serif for UI and body text
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+// Elegant serif for headings and emphasis
+const lora = Lora({
+  variable: "--font-lora",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   title: "Hampton Safety Ltd - Professional Health & Safety Consultancy",
-  description: "Expert health and safety consultancy for medium to enterprise businesses. Specialising in risk assessments, ISO 45001 certification, and compliance training.",
-  keywords: "health safety consultancy, risk assessment, ISO 45001, safety training, workplace safety, compliance",
+  description: "Expert health and safety consultancy for medium to enterprise businesses. Specialising in risk assessments, management systems implementation, and compliance training.",
+  keywords: "health safety consultancy, risk assessment, management systems, ISO implementation, safety training, workplace safety, compliance",
 };
 
 export default function RootLayout({
@@ -26,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${lora.variable} font-sans antialiased`}
       >
         {children}
       </body>

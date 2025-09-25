@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
 import { motion } from 'framer-motion'
 import {
   Shield,
@@ -15,7 +16,8 @@ import {
   Mail,
   MapPin,
   Clock,
-  Star
+  Star,
+  X
 } from 'lucide-react'
 import Link from 'next/link'
 
@@ -25,46 +27,49 @@ export default function Home() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 to-white py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="relative hampton-gradient-light py-24 lg:py-32 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-hampton-blue/5 via-transparent to-hampton-light/30"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <Badge className="mb-4" variant="secondary">
-                Trusted by Infrastructure & Construction Leaders
+              <Badge className="mb-6 hampton-trust-badge">
+                Trusted Health & Safety Specialists
               </Badge>
-              <h1 className="text-5xl font-bold text-gray-900 mb-6">
-                Keep Your People Safe.
-                <span className="text-blue-600"> Keep Your Business Compliant.</span>
+              <h1 className="hampton-heading-xl text-gray-900 mb-6">
+                Tailored Safety Solutions.
+                <span className="text-hampton-blue"> People-First Approach.</span>
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
-                Tailored health and safety solutions for medium to enterprise businesses.
-                From London Underground to local construction - we ensure your supply chain due diligence meets the highest standards.
+              <p className="hampton-body-lg mb-8">
+                Bespoke health and safety consultancy that keeps your people protected and your business compliant.
+                From growing enterprises to established organisations, we deliver solutions that fit.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" asChild>
-                  <Link href="/contact">Get Free Consultation</Link>
+                <Button size="lg" className="hampton-button-primary" asChild>
+                  <Link href="/contact">Get Consultation</Link>
                 </Button>
-                <Button variant="outline" size="lg" className="group">
-                  <Phone className="mr-2 h-4 w-4" />
-                  Call Now
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                <Button variant="outline" size="lg" className="group border-hampton-blue text-hampton-blue hover:bg-hampton-blue hover:text-white" asChild>
+                  <Link href="/contact">
+                    <Phone className="mr-2 h-4 w-4" />
+                    Call Us
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </Link>
                 </Button>
               </div>
               <div className="mt-8 flex items-center gap-6">
                 <div className="flex items-center">
                   <div className="flex -space-x-2">
-                    <div className="w-8 h-8 bg-blue-500 rounded-full border-2 border-white"></div>
-                    <div className="w-8 h-8 bg-green-500 rounded-full border-2 border-white"></div>
-                    <div className="w-8 h-8 bg-purple-500 rounded-full border-2 border-white"></div>
+                    <div className="w-8 h-8 bg-hampton-blue rounded-full border-2 border-white"></div>
+                    <div className="w-8 h-8 bg-hampton-green rounded-full border-2 border-white"></div>
+                    <div className="w-8 h-8 bg-hampton-medium rounded-full border-2 border-white"></div>
                   </div>
                   <span className="ml-3 text-sm text-gray-600">Trusted by 100+ businesses</span>
                 </div>
                 <div className="flex items-center">
-                  <Star className="h-4 w-4 text-yellow-400 fill-current" />
+                  <Star className="h-4 w-4 text-hampton-green fill-current" />
                   <span className="ml-1 text-sm text-gray-600">5-star service</span>
                 </div>
               </div>
@@ -76,10 +81,10 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative"
             >
-              <Card className="bg-white/80 backdrop-blur border-blue-100">
+              <Card className="hampton-card-premium">
                 <CardHeader>
-                  <CardTitle className="flex items-center">
-                    <Shield className="mr-2 h-5 w-5 text-blue-600" />
+                  <CardTitle className="flex items-center hampton-heading-md">
+                    <Shield className="mr-2 h-5 w-5 text-hampton-blue" />
                     Quick Compliance Check
                   </CardTitle>
                   <CardDescription>
@@ -90,18 +95,18 @@ export default function Home() {
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
                       <span className="text-sm">Risk Assessments Updated</span>
-                      <CheckCircle className="h-4 w-4 text-green-500" />
+                      <CheckCircle className="h-4 w-4 text-hampton-green" />
                     </div>
                     <div className="flex items-center justify-between">
                       <span className="text-sm">Staff Training Current</span>
-                      <CheckCircle className="h-4 w-4 text-green-500" />
+                      <CheckCircle className="h-4 w-4 text-hampton-green" />
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm">ISO 45001 Certified</span>
-                      <span className="text-sm text-orange-500">Recommended</span>
+                      <span className="text-sm">Management Systems Implemented</span>
+                      <X className="h-4 w-4 text-red-500" />
                     </div>
-                    <Button className="w-full mt-4" variant="outline">
-                      Get Full Assessment
+                    <Button className="w-full mt-4" variant="outline" asChild>
+                      <Link href="/contact">Get Consultation</Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -111,48 +116,28 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust Indicators */}
-      <section className="py-12 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-blue-600">100+</div>
-              <div className="text-sm text-gray-600">Businesses Protected</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-blue-600">15+</div>
-              <div className="text-sm text-gray-600">Years Experience</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-blue-600">IOSH</div>
-              <div className="text-sm text-gray-600">Licensed Training</div>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-blue-600">24h</div>
-              <div className="text-sm text-gray-600">Response Time</div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Services Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="hampton-heading-lg text-gray-900 mb-4 ">
               Comprehensive Health & Safety Solutions
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From retained consultancy to specialist training, we provide everything
-              your procurement team needs to demonstrate due diligence.
+            <p className="hampton-body-lg max-w-3xl mx-auto">
+              Crafted to meet the specific needs of businesses across construction, manufacturing,
+              infrastructure and beyond. Every solution tailored to your operational requirements.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="group hover:shadow-lg transition-shadow cursor-pointer">
+            <Card className="hampton-card-hover group cursor-pointer">
               <CardHeader>
-                <Shield className="h-8 w-8 text-blue-600 mb-2" />
-                <CardTitle className="text-lg">Retained Consultancy</CardTitle>
+                <div className="hampton-icon-card mb-4 relative overflow-hidden">
+                  <Shield className="h-12 w-12 text-hampton-blue" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-hampton-blue/5 to-hampton-royal/5"></div>
+                </div>
+                <CardTitle className="hampton-heading-md">Retained Consultancy</CardTitle>
                 <CardDescription>
                   Dedicated H&S consultant to fulfil your statutory requirements
                 </CardDescription>
@@ -169,10 +154,13 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-shadow cursor-pointer">
+            <Card className="hampton-card-hover group cursor-pointer">
               <CardHeader>
-                <CheckCircle className="h-8 w-8 text-blue-600 mb-2" />
-                <CardTitle className="text-lg">Risk Assessments</CardTitle>
+                <div className="hampton-icon-card mb-4 relative overflow-hidden">
+                  <CheckCircle className="h-12 w-12 text-hampton-blue" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-hampton-blue/5 to-hampton-royal/5"></div>
+                </div>
+                <CardTitle className="hampton-heading-md">Risk Assessments</CardTitle>
                 <CardDescription>
                   Comprehensive workplace risk evaluation and mitigation strategies
                 </CardDescription>
@@ -189,12 +177,15 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-shadow cursor-pointer">
+            <Card className="hampton-card-hover group cursor-pointer">
               <CardHeader>
-                <Award className="h-8 w-8 text-blue-600 mb-2" />
-                <CardTitle className="text-lg">ISO 45001 Support</CardTitle>
+                <div className="hampton-icon-card mb-4 relative overflow-hidden">
+                  <Award className="h-12 w-12 text-hampton-blue" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-hampton-blue/5 to-hampton-royal/5"></div>
+                </div>
+                <CardTitle className="hampton-heading-md">Management Systems</CardTitle>
                 <CardDescription>
-                  Achieve industry-standard certification to enhance competitiveness
+                  ISO-aligned management system implementation and support
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -209,10 +200,13 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-lg transition-shadow cursor-pointer">
+            <Card className="hampton-card-hover group cursor-pointer">
               <CardHeader>
-                <Users className="h-8 w-8 text-blue-600 mb-2" />
-                <CardTitle className="text-lg">Safety Training</CardTitle>
+                <div className="hampton-icon-card mb-4 relative overflow-hidden">
+                  <Users className="h-12 w-12 text-hampton-blue" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-hampton-blue/5 to-hampton-royal/5"></div>
+                </div>
+                <CardTitle className="hampton-heading-md">Safety Training</CardTitle>
                 <CardDescription>
                   IOSH-accredited courses delivered on-site to your team
                 </CardDescription>
@@ -233,67 +227,160 @@ export default function Home() {
       </section>
 
       {/* Why Choose Section */}
-      <section className="py-20 bg-blue-50">
+      <section className="py-20 hampton-gradient-light">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Why procurement teams choose Hampton Safety
+              <h2 className="hampton-heading-lg text-gray-900 mb-6 ">
+                Why businesses choose our people-first approach
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-green-500 mt-1 mr-4 flex-shrink-0" />
+                  <CheckCircle className="h-6 w-6 text-hampton-green mt-1 mr-4 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Proven Track Record</h3>
-                    <p className="text-gray-600">
-                      Extensive experience on critical infrastructure including London Underground and national rail networks.
+                    <h3 className="hampton-heading-md text-gray-900 mb-1">Proven Experience & Expertise</h3>
+                    <p className="hampton-body">
+                      Years of experience across complex, high-risk projects including major infrastructure initiatives.
+                      Deep understanding of unique challenges faced by industries where compliance is critical.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-green-500 mt-1 mr-4 flex-shrink-0" />
+                  <CheckCircle className="h-6 w-6 text-hampton-green mt-1 mr-4 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Personalized Approach</h3>
-                    <p className="text-gray-600">
-                      Unlike larger competitors, we provide bespoke solutions tailored to your specific operational needs.
+                    <h3 className="hampton-heading-md text-gray-900 mb-1">Bespoke Solutions, Not Box-Ticking</h3>
+                    <p className="hampton-body">
+                      While many companies offer off-the-shelf solutions, we take time to understand your specific needs.
+                      Our consultants deliver tailored strategies that fit your operational requirements perfectly.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <CheckCircle className="h-6 w-6 text-green-500 mt-1 mr-4 flex-shrink-0" />
+                  <CheckCircle className="h-6 w-6 text-hampton-green mt-1 mr-4 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Referral-Based Reputation</h3>
-                    <p className="text-gray-600">
-                      Much of our business comes through recommendations from satisfied clients across various sectors.
+                    <h3 className="hampton-heading-md text-gray-900 mb-1">Building Lasting Partnerships</h3>
+                    <p className="hampton-body">
+                      We're here to build lasting partnerships that protect your people, enhance productivity,
+                      and give you confidence in your compliance. Much of our business comes through referrals.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            <Card className="bg-white">
-              <CardHeader>
-                <CardTitle>Ready to ensure compliance?</CardTitle>
-                <CardDescription>
-                  Schedule your free consultation with our safety experts.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <div className="flex items-center">
-                    <Clock className="h-4 w-4 text-blue-600 mr-2" />
-                    <span className="text-sm">30-minute consultation</span>
+            <div className="relative">
+              <div className="hampton-image-hero mb-6 relative">
+                <div className="absolute inset-0 hampton-gradient-overlay opacity-20 rounded-lg"></div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="text-center text-white">
+                    <Shield className="h-16 w-16 mx-auto mb-4 opacity-80" />
+                    <p className="text-lg font-medium opacity-90">Professional Safety Consultation</p>
                   </div>
-                  <div className="flex items-center">
-                    <Phone className="h-4 w-4 text-blue-600 mr-2" />
-                    <span className="text-sm">Same-day response</span>
+                </div>
+              </div>
+              <Card className="hampton-card-premium">
+                <CardHeader>
+                  <CardTitle className="hampton-heading-md">Ready to ensure compliance?</CardTitle>
+                  <CardDescription>
+                    Schedule your consultation with our safety experts.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-4">
+                    <div className="flex items-center">
+                      <Clock className="h-4 w-4 text-hampton-blue mr-2" />
+                      <span className="text-sm hampton-body">30-minute consultation</span>
+                    </div>
+                    <div className="flex items-center">
+                      <Phone className="h-4 w-4 text-hampton-blue mr-2" />
+                      <span className="text-sm hampton-body">Same-day response</span>
+                    </div>
+                    <div className="flex items-center">
+                      <CheckCircle className="h-4 w-4 text-hampton-blue mr-2" />
+                      <span className="text-sm hampton-body">No obligation quote</span>
+                    </div>
+                    <Button className="w-full" size="lg" asChild>
+                      <Link href="/contact">Get Consultation</Link>
+                    </Button>
                   </div>
-                  <div className="flex items-center">
-                    <CheckCircle className="h-4 w-4 text-blue-600 mr-2" />
-                    <span className="text-sm">No obligation quote</span>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Client Testimonials */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="hampton-heading-lg text-gray-900 mb-4 ">
+              What Our Clients Say
+            </h2>
+            <p className="hampton-body-lg">
+              Real feedback from businesses we've helped achieve safety excellence
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="hampton-card-hover relative">
+              <CardContent className="pt-6">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-hampton-green">
+                    <Star className="h-4 w-4 fill-current" />
+                    <Star className="h-4 w-4 fill-current" />
+                    <Star className="h-4 w-4 fill-current" />
+                    <Star className="h-4 w-4 fill-current" />
+                    <Star className="h-4 w-4 fill-current" />
                   </div>
-                  <Button className="w-full" size="lg">
-                    Book Consultation
-                  </Button>
+                </div>
+                <p className="hampton-body italic mb-4">
+                  "Gary has worked with us for numerous years and has taken our Health & Safety to the next level. With a keen eye for detail, his documentation and reports continue to impress both new and existing clients."
+                </p>
+                <div className="border-t pt-4">
+                  <div className="font-semibold hampton-heading-md">Michael Murphy</div>
+                  <div className="text-sm text-slate-500 hampton-body">Access International Security</div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hampton-card-hover relative">
+              <CardContent className="pt-6">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-hampton-green">
+                    <Star className="h-4 w-4 fill-current" />
+                    <Star className="h-4 w-4 fill-current" />
+                    <Star className="h-4 w-4 fill-current" />
+                    <Star className="h-4 w-4 fill-current" />
+                    <Star className="h-4 w-4 fill-current" />
+                  </div>
+                </div>
+                <p className="hampton-body italic mb-4">
+                  "Thank you for delivering this training course - it exceeded my expectations. Gary's professional approach and expertise made the session both informative and engaging."
+                </p>
+                <div className="border-t pt-4">
+                  <div className="font-semibold hampton-heading-md">Alberto Moreno Montanes</div>
+                  <div className="text-sm text-slate-500 hampton-body">Senior Quality and HSE Engineer, Emerson</div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hampton-card-hover relative">
+              <CardContent className="pt-6">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-hampton-green">
+                    <Star className="h-4 w-4 fill-current" />
+                    <Star className="h-4 w-4 fill-current" />
+                    <Star className="h-4 w-4 fill-current" />
+                    <Star className="h-4 w-4 fill-current" />
+                    <Star className="h-4 w-4 fill-current" />
+                  </div>
+                </div>
+                <p className="hampton-body italic mb-4">
+                  "Gary did an excellent job delivering our safety training. The session was well-presented, very informative, and perfectly tailored to our operational needs."
+                </p>
+                <div className="border-t pt-4">
+                  <div className="font-semibold hampton-heading-md">Steven Nielsen</div>
+                  <div className="text-sm text-slate-500 hampton-body">Night Operations Manager, Bakkavor Meals</div>
                 </div>
               </CardContent>
             </Card>
@@ -301,64 +388,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="font-bold mb-4">Hampton Safety Ltd</h3>
-              <p className="text-gray-400 text-sm mb-4">
-                Professional health and safety consultancy for businesses across the UK.
-              </p>
-              <div className="flex items-center mb-2">
-                <Phone className="h-4 w-4 mr-2" />
-                <span className="text-sm">[Phone Number]</span>
-              </div>
-              <div className="flex items-center mb-2">
-                <Mail className="h-4 w-4 mr-2" />
-                <span className="text-sm">[Email Address]</span>
-              </div>
-              <div className="flex items-center">
-                <MapPin className="h-4 w-4 mr-2" />
-                <span className="text-sm">[Office Address]</span>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="font-bold mb-4">Services</h3>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><Link href="/services/consultancy" className="hover:text-white">Health & Safety Consultancy</Link></li>
-                <li><Link href="/services/risk-assessments" className="hover:text-white">Risk Assessments</Link></li>
-                <li><Link href="/services/iso-certification" className="hover:text-white">ISO 45001 Certification</Link></li>
-                <li><Link href="/services/training" className="hover:text-white">Safety Training</Link></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-bold mb-4">Company</h3>
-              <ul className="space-y-2 text-sm text-gray-400">
-                <li><Link href="/about" className="hover:text-white">About Us</Link></li>
-                <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
-                <li><Link href="/case-studies" className="hover:text-white">Case Studies</Link></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="font-bold mb-4">Get Started</h3>
-              <p className="text-gray-400 text-sm mb-4">
-                Ready to improve your workplace safety?
-              </p>
-              <Button variant="outline" className="text-black border-white hover:bg-white">
-                Free Consultation
-              </Button>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-            <p>&copy; 2024 Hampton Safety Ltd. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }
