@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
-import { Shield, CheckCircle, Users, Award, Clock, FileText, Phone, Target } from 'lucide-react'
+import { Shield, CheckCircle, Users, Award, FileText, Phone, Target } from 'lucide-react'
 
 export default function ConsultancyPage() {
   return (
@@ -236,7 +236,7 @@ export default function ConsultancyPage() {
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-hampton-green mt-1 flex-shrink-0" />
                   <p className="hampton-body">
-                    <span className="font-semibold">Partnership Approach:</span> We're here to build lasting partnerships that protect your people and enhance productivity
+                    <span className="font-semibold">Partnership Approach:</span> We&apos;re here to build lasting partnerships that protect your people and enhance productivity
                   </p>
                 </div>
               </div>

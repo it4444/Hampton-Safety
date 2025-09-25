@@ -390,7 +390,7 @@ export default function TrainingPage() {
       <section className="py-16 hampton-gradient-primary">
         <div className="container mx-auto px-4 text-center">
           <h2 className="hampton-heading-lg text-white mb-4">
-            Invest in Your Team's Safety Knowledge
+            Invest in Your Team&apos;s Safety Knowledge
           </h2>
           <p className="hampton-body-lg text-white/90 mb-8 max-w-2xl mx-auto">
             Build competence, ensure compliance, and create a positive safety culture with our expert training programmes.

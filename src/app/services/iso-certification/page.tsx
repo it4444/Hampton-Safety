@@ -1,7 +1,7 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import Link from 'next/link'
 import { Award, CheckCircle, Target, Users, FileCheck, Clock } from 'lucide-react'
 
@@ -22,7 +22,7 @@ export default function ManagementSystemsPage() {
               Management Systems Support
             </h1>
             <p className="hampton-body-lg text-gray-600 mb-8">
-              Expert guidance to design, implement, and maintain effective management systems. Streamline your organisation's processes with proven methodologies aligned to international standards.
+              Expert guidance to design, implement, and maintain effective management systems. Streamline your organisation&apos;s processes with proven methodologies aligned to international standards.
             </p>
           </div>
         </div>

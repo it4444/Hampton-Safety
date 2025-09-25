@@ -34,11 +34,11 @@ export default function Contact() {
               Get In Touch
             </Badge>
             <h1 className="hampton-heading-xl text-gray-900 mb-6">
-              Let's Make Your Workplace
+              Let&apos;s Make Your Workplace
               <span className="text-hampton-blue"> Safer Together</span>
             </h1>
             <p className="hampton-body-lg mb-8">
-              Whether you're looking for expert health and safety advice, tailored consultancy services,
+              Whether you&apos;re looking for expert health and safety advice, tailored consultancy services,
               or accredited training programs, our team is here to help. Start with a free consultation.
             </p>
           </motion.div>
@@ -298,7 +298,7 @@ export default function Contact() {
             </h2>
             <p className="hampton-body-lg mb-12">
               We serve businesses across the UK with offices in [Insert Cities/Regions].
-              No matter where you are located, we're ready to bring our health and safety expertise to your doorstep.
+              No matter where you are located, we&apos;re ready to bring our health and safety expertise to your doorstep.
             </p>
 
             <div className="grid md:grid-cols-2 gap-8">
@@ -341,7 +341,7 @@ export default function Contact() {
             Ready to Start Building a Safer Future for Your Business?
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Whether you're looking to improve workplace safety, achieve ISO certification,
+            Whether you&apos;re looking to improve workplace safety, achieve ISO certification,
             or receive tailored consultancy, Hampton Safety Ltd has the expertise to guide you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

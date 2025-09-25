@@ -3,7 +3,7 @@ import Footer from '@/components/Footer'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import Link from 'next/link'
-import { CheckCircle, Shield, FileText, Users } from 'lucide-react'
+import { CheckCircle, Shield, FileText } from 'lucide-react'
 
 export default function RiskAssessmentsPage() {
   return (

@@ -13,8 +13,6 @@ import {
   Award,
   ArrowRight,
   Phone,
-  Mail,
-  MapPin,
   Clock,
   Star,
   X
@@ -260,7 +258,7 @@ export default function Home() {
                   <div>
                     <h3 className="hampton-heading-md text-gray-900 mb-1">Building Lasting Partnerships</h3>
                     <p className="hampton-body">
-                      We're here to build lasting partnerships that protect your people, enhance productivity,
+                      We&apos;re here to build lasting partnerships that protect your people, enhance productivity,
                       and give you confidence in your compliance. Much of our business comes through referrals.
                     </p>
                   </div>
@@ -317,7 +315,7 @@ export default function Home() {
               What Our Clients Say
             </h2>
             <p className="hampton-body-lg">
-              Real feedback from businesses we've helped achieve safety excellence
+              Real feedback from businesses we&apos;ve helped achieve safety excellence
             </p>
           </div>
 
@@ -334,7 +332,7 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="hampton-body italic mb-4">
-                  "Gary has worked with us for numerous years and has taken our Health & Safety to the next level. With a keen eye for detail, his documentation and reports continue to impress both new and existing clients."
+                  &ldquo;Gary has worked with us for numerous years and has taken our Health &amp; Safety to the next level. With a keen eye for detail, his documentation and reports continue to impress both new and existing clients.&rdquo;
                 </p>
                 <div className="border-t pt-4">
                   <div className="font-semibold hampton-heading-md">Michael Murphy</div>
@@ -355,7 +353,7 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="hampton-body italic mb-4">
-                  "Thank you for delivering this training course - it exceeded my expectations. Gary's professional approach and expertise made the session both informative and engaging."
+                  &ldquo;Thank you for delivering this training course - it exceeded my expectations. Gary&apos;s professional approach and expertise made the session both informative and engaging.&rdquo;
                 </p>
                 <div className="border-t pt-4">
                   <div className="font-semibold hampton-heading-md">Alberto Moreno Montanes</div>
@@ -376,7 +374,7 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="hampton-body italic mb-4">
-                  "Gary did an excellent job delivering our safety training. The session was well-presented, very informative, and perfectly tailored to our operational needs."
+                  &ldquo;Gary did an excellent job delivering our safety training. The session was well-presented, very informative, and perfectly tailored to our operational needs.&rdquo;
                 </p>
                 <div className="border-t pt-4">
                   <div className="font-semibold hampton-heading-md">Steven Nielsen</div>

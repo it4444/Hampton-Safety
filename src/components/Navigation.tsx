@@ -11,7 +11,6 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from '@/components/ui/navigation-menu'
-import { Phone, Mail } from 'lucide-react'
 
 export default function Navigation() {
   return (

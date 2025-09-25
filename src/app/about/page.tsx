@@ -1,7 +1,7 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
@@ -40,7 +40,7 @@ export default function About() {
             </h1>
             <p className="hampton-body-lg mb-8">
               At Hampton Safety Ltd, we believe that a safer workplace is a more successful one.
-              We're driven by a commitment to deliver personalised health and safety services
+              We&apos;re driven by a commitment to deliver personalised health and safety services
               that help businesses thrive while meeting regulatory standards.
             </p>
           </motion.div>
@@ -157,7 +157,7 @@ export default function About() {
               Experience & Expertise
             </h2>
             <p className="hampton-body-lg mb-12">
-              With years of experience, Hampton Safety Ltd has worked on some of the UK's most complex
+              With years of experience, Hampton Safety Ltd has worked on some of the UK&apos;s most complex
               and high-risk projects, including major infrastructure initiatives ranging from the London
               Underground and national rail networks through to smaller companies working in construction and retail.
             </p>
