@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Shield, CheckCircle, Users, Award, FileText, Phone, Target } from 'lucide-react'
 
 export default function ConsultancyPage() {
@@ -67,13 +68,14 @@ export default function ConsultancyPage() {
                 </div>
               </div>
             </div>
-            <div className="hampton-image-hero">
-              <div className="flex items-center justify-center h-full">
-                <div className="text-center">
-                  <Users className="w-16 h-16 text-hampton-blue/50 mx-auto mb-4" />
-                  <p className="text-hampton-blue/70 font-medium">Your Extended Safety Team</p>
-                </div>
-              </div>
+            <div className="relative">
+              <Image
+                src="/images/health-and-safety.png"
+                alt="Your Dedicated Safety Partner - Health and Safety Consultancy"
+                width={600}
+                height={400}
+                className="rounded-lg w-full h-auto object-cover"
+              />
             </div>
           </div>
         </div>
