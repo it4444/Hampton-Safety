@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -13,10 +14,40 @@ import {
   Clock,
   CheckCircle,
   MessageSquare,
-  Calendar
+  Calendar,
+  AlertCircle
 } from 'lucide-react'
 
 export default function Contact() {
+  const [formStatus, setFormStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle')
+  const [errorMessage, setErrorMessage] = useState('')
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setFormStatus('submitting')
+    setErrorMessage('')
+
+    const formData = new FormData(e.currentTarget)
+
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData as any).toString()
+      })
+
+      if (response.ok) {
+        setFormStatus('success')
+        ;(e.target as HTMLFormElement).reset()
+      } else {
+        setFormStatus('error')
+        setErrorMessage('There was a problem submitting your form. Please try again.')
+      }
+    } catch (error) {
+      setFormStatus('error')
+      setErrorMessage('There was a problem submitting your form. Please check your connection and try again.')
+    }
+  }
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
@@ -112,7 +143,26 @@ export default function Contact() {
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <form name="contact" method="POST" data-netlify="true" className="space-y-4">
+                  {formStatus === 'success' ? (
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className="py-12 text-center"
+                    >
+                      <CheckCircle className="h-16 w-16 text-hampton-green mx-auto mb-4" />
+                      <h3 className="text-2xl font-bold text-gray-900 mb-2">Thank You for Your Message!</h3>
+                      <p className="text-gray-600 mb-6">
+                        We've received your enquiry and one of our safety experts will be in touch within 24 hours.
+                      </p>
+                      <Button
+                        onClick={() => setFormStatus('idle')}
+                        variant="outline"
+                      >
+                        Send Another Message
+                      </Button>
+                    </motion.div>
+                  ) : (
+                  <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit} className="space-y-4">
                     <input type="hidden" name="form-name" value="contact" />
                     <div className="grid md:grid-cols-2 gap-4">
                       <div>
@@ -222,10 +272,23 @@ export default function Contact() {
                       ></textarea>
                     </div>
 
-                    <Button type="submit" className="w-full" size="lg">
-                      Send Message
+                    {formStatus === 'error' && (
+                      <div className="bg-red-50 border border-red-200 rounded-md p-4 flex items-start space-x-2">
+                        <AlertCircle className="h-5 w-5 text-red-600 flex-shrink-0 mt-0.5" />
+                        <p className="text-sm text-red-700">{errorMessage}</p>
+                      </div>
+                    )}
+
+                    <Button
+                      type="submit"
+                      className="w-full"
+                      size="lg"
+                      disabled={formStatus === 'submitting'}
+                    >
+                      {formStatus === 'submitting' ? 'Sending Message...' : 'Send Message'}
                     </Button>
                   </form>
+                  )}
                 </CardContent>
               </Card>
             </div>
