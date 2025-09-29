@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Forms - Do not delete this file</title>
+  <meta charset="UTF-8">
+  <title>Netlify Forms Detection</title>
 </head>
 <body>
-  <!-- This file is for Netlify form detection only - do not delete -->
+  <!-- This page is specifically for Netlify to detect forms during build -->
+  <!-- It will not be visible to users -->
 
-  <!-- Contact Form -->
-  <form name="contact" netlify netlify-honeypot="bot-field" data-netlify="true" hidden>
-    <input type="hidden" name="form-name" value="contact" />
+  <form name="contact" method="POST" netlify data-netlify="true">
     <input type="text" name="firstName" />
     <input type="text" name="lastName" />
     <input type="text" name="company" />
     <input type="email" name="email" />
     <input type="tel" name="phone" />
     <select name="industry">
+      <option value="">Select Industry</option>
       <option value="construction">Construction</option>
       <option value="manufacturing">Manufacturing</option>
       <option value="healthcare">Healthcare</option>
@@ -24,6 +25,7 @@
       <option value="other">Other</option>
     </select>
     <select name="service">
+      <option value="">What service are you interested in?</option>
       <option value="consultancy">Health & Safety Consultancy</option>
       <option value="risk-assessment">Risk Assessments & Audits</option>
       <option value="iso-certification">Management Systems Support</option>
@@ -31,7 +33,7 @@
       <option value="general">General Enquiry</option>
     </select>
     <textarea name="message"></textarea>
+    <button type="submit">Submit</button>
   </form>
-
 </body>
 </html>
