@@ -33,7 +33,7 @@ export default function Contact() {
       const response = await fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData as any).toString()
+        body: new URLSearchParams(Array.from(formData.entries()) as [string, string][]).toString()
       })
 
       if (response.ok) {
@@ -152,7 +152,7 @@ export default function Contact() {
                       <CheckCircle className="h-16 w-16 text-hampton-green mx-auto mb-4" />
                       <h3 className="text-2xl font-bold text-gray-900 mb-2">Thank You for Your Message!</h3>
                       <p className="text-gray-600 mb-6">
-                        We've received your enquiry and one of our safety experts will be in touch within 24 hours.
+                        We&apos;ve received your enquiry and one of our safety experts will be in touch within 24 hours.
                       </p>
                       <Button
                         onClick={() => setFormStatus('idle')}
