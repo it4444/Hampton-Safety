@@ -268,15 +268,11 @@ export default function Home() {
                   <div className="space-y-4">
                     <div className="flex items-center">
                       <Clock className="h-4 w-4 text-hampton-blue mr-2" />
-                      <span className="text-sm hampton-body">30-minute consultation</span>
+                      <span className="text-sm text-gray-600">30-minute consultation</span>
                     </div>
                     <div className="flex items-center">
                       <Phone className="h-4 w-4 text-hampton-blue mr-2" />
-                      <span className="text-sm hampton-body">Same-day response</span>
-                    </div>
-                    <div className="flex items-center">
-                      <CheckCircle className="h-4 w-4 text-hampton-blue mr-2" />
-                      <span className="text-sm hampton-body text-hampton-blue">Same-day response</span>
+                      <span className="text-sm text-gray-600">Same-day response</span>
                     </div>
                     <Button className="w-full" size="lg" asChild>
                       <Link href="/contact">Request a Consultation</Link>
