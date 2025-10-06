@@ -120,8 +120,10 @@ export default function Home() {
                   <li>• Compliance monitoring</li>
                   <li>• Documentation support</li>
                 </ul>
-                <Button variant="ghost" className="mt-4 p-0 h-auto group-hover:translate-x-1 transition-transform">
-                  Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                <Button variant="ghost" className="mt-4 p-0 h-auto group-hover:translate-x-1 transition-transform" asChild>
+                  <Link href="/services/consultancy">
+                    Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -143,8 +145,10 @@ export default function Home() {
                   <li>• Action plan creation</li>
                   <li>• Regular reviews</li>
                 </ul>
-                <Button variant="ghost" className="mt-4 p-0 h-auto group-hover:translate-x-1 transition-transform">
-                  Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                <Button variant="ghost" className="mt-4 p-0 h-auto group-hover:translate-x-1 transition-transform" asChild>
+                  <Link href="/services/risk-assessments">
+                    Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -166,8 +170,10 @@ export default function Home() {
                   <li>• Implementation support</li>
                   <li>• Audit preparation</li>
                 </ul>
-                <Button variant="ghost" className="mt-4 p-0 h-auto group-hover:translate-x-1 transition-transform">
-                  Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                <Button variant="ghost" className="mt-4 p-0 h-auto group-hover:translate-x-1 transition-transform" asChild>
+                  <Link href="/services/iso-certification">
+                    Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -189,8 +195,10 @@ export default function Home() {
                   <li>• <Link href="/services/training" className="text-hampton-blue hover:underline">Full list available here</Link></li>
                   <li>• Bespoke programs</li>
                 </ul>
-                <Button variant="ghost" className="mt-4 p-0 h-auto group-hover:translate-x-1 transition-transform">
-                  Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                <Button variant="ghost" className="mt-4 p-0 h-auto group-hover:translate-x-1 transition-transform" asChild>
+                  <Link href="/services/training">
+                    Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
