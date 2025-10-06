@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
@@ -17,6 +17,18 @@ import { Menu, X, ChevronDown } from 'lucide-react'
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
+
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+    return () => {
+      document.body.style.overflow = 'unset'
+    }
+  }, [mobileMenuOpen])
 
   return (
     <header className="border-b bg-white sticky top-0 z-50">
@@ -99,7 +111,7 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-gray-900 hover:text-hampton-blue"
+            className="lg:hidden p-2 text-gray-900 hover:text-hampton-blue transition-colors"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? (
@@ -109,89 +121,112 @@ export default function Navigation() {
             )}
           </button>
         </div>
+      </div>
 
-        {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 border-t pt-4">
-            <nav className="flex flex-col space-y-2">
-              <Link
-                href="/"
-                className="px-4 py-3 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-lg"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Home
-              </Link>
+      {/* Mobile Menu Overlay */}
+      {mobileMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black/50 z-40 lg:hidden"
+          onClick={() => setMobileMenuOpen(false)}
+        />
+      )}
 
-              {/* Mobile Services Accordion */}
-              <div>
-                <button
-                  onClick={() => setServicesOpen(!servicesOpen)}
-                  className="w-full flex items-center justify-between px-4 py-3 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-lg"
+      {/* Mobile Menu Sidebar */}
+      <div
+        className={`fixed top-0 right-0 h-full w-80 bg-white shadow-2xl z-50 transform transition-transform duration-300 ease-in-out lg:hidden ${
+          mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        {/* Mobile Menu Header */}
+        <div className="flex items-center justify-between p-4 border-b">
+          <span className="font-semibold text-lg text-hampton-blue">Menu</span>
+          <button
+            onClick={() => setMobileMenuOpen(false)}
+            className="p-2 text-gray-900 hover:text-hampton-blue"
+            aria-label="Close menu"
+          >
+            <X className="h-6 w-6" />
+          </button>
+        </div>
+
+        {/* Mobile Menu Content */}
+        <nav className="flex flex-col p-4 space-y-2 overflow-y-auto h-[calc(100vh-80px)]">
+          <Link
+            href="/"
+            className="px-4 py-3 text-base font-medium text-gray-900 hover:bg-hampton-light rounded-lg transition-colors"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Home
+          </Link>
+
+          {/* Mobile Services Accordion */}
+          <div>
+            <button
+              onClick={() => setServicesOpen(!servicesOpen)}
+              className="w-full flex items-center justify-between px-4 py-3 text-base font-medium text-gray-900 hover:bg-hampton-light rounded-lg transition-colors"
+            >
+              Services
+              <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${servicesOpen ? 'rotate-180' : ''}`} />
+            </button>
+            {servicesOpen && (
+              <div className="ml-4 mt-2 space-y-2">
+                <Link
+                  href="/services/consultancy"
+                  className="block px-4 py-2 text-sm text-gray-600 hover:text-hampton-blue hover:bg-hampton-light rounded-lg transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
                 >
-                  Services
-                  <ChevronDown className={`h-4 w-4 transition-transform ${servicesOpen ? 'rotate-180' : ''}`} />
-                </button>
-                {servicesOpen && (
-                  <div className="ml-4 mt-2 space-y-2">
-                    <Link
-                      href="/services/consultancy"
-                      className="block px-4 py-2 text-sm text-gray-600 hover:text-hampton-blue hover:bg-gray-50 rounded-lg"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      Health & Safety Consultancy
-                    </Link>
-                    <Link
-                      href="/services/risk-assessments"
-                      className="block px-4 py-2 text-sm text-gray-600 hover:text-hampton-blue hover:bg-gray-50 rounded-lg"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      Risk Assessments & Audits
-                    </Link>
-                    <Link
-                      href="/services/iso-certification"
-                      className="block px-4 py-2 text-sm text-gray-600 hover:text-hampton-blue hover:bg-gray-50 rounded-lg"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      Management Systems
-                    </Link>
-                    <Link
-                      href="/services/training"
-                      className="block px-4 py-2 text-sm text-gray-600 hover:text-hampton-blue hover:bg-gray-50 rounded-lg"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      Safety Training
-                    </Link>
-                  </div>
-                )}
+                  Health & Safety Consultancy
+                </Link>
+                <Link
+                  href="/services/risk-assessments"
+                  className="block px-4 py-2 text-sm text-gray-600 hover:text-hampton-blue hover:bg-hampton-light rounded-lg transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Risk Assessments & Audits
+                </Link>
+                <Link
+                  href="/services/iso-certification"
+                  className="block px-4 py-2 text-sm text-gray-600 hover:text-hampton-blue hover:bg-hampton-light rounded-lg transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Management Systems
+                </Link>
+                <Link
+                  href="/services/training"
+                  className="block px-4 py-2 text-sm text-gray-600 hover:text-hampton-blue hover:bg-hampton-light rounded-lg transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  Safety Training
+                </Link>
               </div>
-
-              <Link
-                href="/about"
-                className="px-4 py-3 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-lg"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                About
-              </Link>
-
-              <Link
-                href="/contact"
-                className="px-4 py-3 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-lg"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Contact
-              </Link>
-
-              {/* Mobile CTA Button */}
-              <div className="pt-4">
-                <Button asChild size="lg" className="w-full bg-hampton-blue text-white hover:bg-hampton-blue/90">
-                  <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
-                    Request a Consultation
-                  </Link>
-                </Button>
-              </div>
-            </nav>
+            )}
           </div>
-        )}
+
+          <Link
+            href="/about"
+            className="px-4 py-3 text-base font-medium text-gray-900 hover:bg-hampton-light rounded-lg transition-colors"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            About
+          </Link>
+
+          <Link
+            href="/contact"
+            className="px-4 py-3 text-base font-medium text-gray-900 hover:bg-hampton-light rounded-lg transition-colors"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Contact
+          </Link>
+
+          {/* Mobile CTA Button */}
+          <div className="pt-4 border-t mt-4">
+            <Button asChild size="lg" className="w-full bg-hampton-blue text-white hover:bg-hampton-blue/90">
+              <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
+                Request a Consultation
+              </Link>
+            </Button>
+          </div>
+        </nav>
       </div>
     </header>
   )

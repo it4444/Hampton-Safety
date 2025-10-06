@@ -140,17 +140,35 @@
 
   .hampton-image-hero {
     @apply hampton-image-placeholder aspect-video w-full;
-    min-height: 400px;
+    min-height: 250px;
+  }
+
+  @media (min-width: 768px) {
+    .hampton-image-hero {
+      min-height: 400px;
+    }
   }
 
   .hampton-image-card {
     @apply hampton-image-placeholder aspect-[4/3] w-full;
-    min-height: 200px;
+    min-height: 150px;
+  }
+
+  @media (min-width: 768px) {
+    .hampton-image-card {
+      min-height: 200px;
+    }
   }
 
   .hampton-icon-card {
     @apply hampton-image-placeholder aspect-[4/3] w-full;
-    min-height: 100px;
+    min-height: 80px;
+  }
+
+  @media (min-width: 768px) {
+    .hampton-icon-card {
+      min-height: 100px;
+    }
   }
 
   .hampton-image-square {
