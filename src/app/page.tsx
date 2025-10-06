@@ -14,8 +14,7 @@ import {
   ArrowRight,
   Phone,
   Clock,
-  Star,
-  X
+  Star
 } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'

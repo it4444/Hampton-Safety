@@ -43,7 +43,7 @@ export default function Contact() {
         setFormStatus('error')
         setErrorMessage('There was a problem submitting your form. Please try again.')
       }
-    } catch (error) {
+    } catch {
       setFormStatus('error')
       setErrorMessage('There was a problem submitting your form. Please check your connection and try again.')
     }
@@ -70,7 +70,7 @@ export default function Contact() {
             </h1>
             <p className="hampton-body-lg mb-8">
               Whether you&apos;re looking for expert health and safety advice, tailored consultancy services,
-              or accredited training programs, our team is here to help. Start with a free consultation.
+              or accredited training programs, our team is here to help. Request a consultation today.
             </p>
           </motion.div>
         </div>
@@ -114,7 +114,7 @@ export default function Contact() {
                     <MapPin className="h-8 w-8 text-hampton-blue mr-4" />
                     <div>
                       <h3 className="hampton-heading-md">Office Address</h3>
-                      <p className="hampton-body">[Insert Address]</p>
+                      <p className="hampton-body">1426 Robinson South, Wembley Park, London, HA9 0UE</p>
                       <p className="text-sm text-gray-500">Serving businesses across the UK</p>
                     </div>
                   </CardContent>
@@ -137,7 +137,7 @@ export default function Contact() {
             <div>
               <Card>
                 <CardHeader>
-                  <CardTitle>Get Your Free Consultation</CardTitle>
+                  <CardTitle>Request a Consultation</CardTitle>
                   <CardDescription>
                     Fill out the form below, and one of our safety experts will be in touch with you shortly.
                   </CardDescription>
@@ -301,7 +301,7 @@ export default function Contact() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="hampton-heading-lg text-gray-900 mb-8 text-center">
-              What to Expect from Your Free Consultation
+              What to Expect from Your Consultation
             </h2>
 
             <div className="grid md:grid-cols-3 gap-8">
@@ -336,16 +336,16 @@ export default function Contact() {
                 </CardHeader>
                 <CardContent>
                   <p className="hampton-body">
-                    Customized solution proposal with transparent pricing and clear next steps.
+                    Customised solution proposal with transparent pricing and clear next steps.
                   </p>
                 </CardContent>
               </Card>
             </div>
 
             <div className="text-center mt-12">
-              <div className="inline-flex items-center space-x-2 text-hampton-green mb-4">
+              <div className="inline-flex items-center space-x-2 text-hampton-blue mb-4">
                 <CheckCircle className="h-5 w-5" />
-                <span className="font-medium">No obligation • Same-day response • Expert guidance</span>
+                <span className="font-medium">Same-day response • Expert guidance</span>
               </div>
             </div>
           </div>
@@ -367,13 +367,13 @@ export default function Contact() {
             <div className="grid md:grid-cols-2 gap-8">
               <Card>
                 <CardHeader>
-                  <CardTitle>On-site Services</CardTitle>
+                  <CardTitle>Site Visits and Assessments</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="text-left space-y-2 hampton-body">
                     <li>• Site visits and assessments</li>
                     <li>• On-site training delivery</li>
-                    <li>• Risk assessment walkthroughs</li>
+                    <li>• Risk assessment walkthrough</li>
                     <li>• Face-fit testing sessions</li>
                   </ul>
                 </CardContent>
