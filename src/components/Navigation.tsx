@@ -86,8 +86,8 @@ export default function Navigation() {
           </NavigationMenu>
 
             {/* CTA Button */}
-            <Button asChild size="sm" className="text-base px-4 py-2">
-              <Link href="/contact">Get Consultation</Link>
+            <Button asChild size="sm" className="text-base px-4 py-2 bg-hampton-blue text-white hover:bg-hampton-blue/90">
+              <Link href="/contact">Request a Consultation</Link>
             </Button>
           </div>
         </div>

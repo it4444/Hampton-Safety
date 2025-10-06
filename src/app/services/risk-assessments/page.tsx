@@ -22,7 +22,7 @@ export default function RiskAssessmentsPage() {
               Comprehensive Risk Assessments
             </h1>
             <p className="hampton-body-lg text-gray-600 mb-8">
-              Expert risk assessment services that identify workplace hazards, ensure legal compliance, and protect your workforce with TfL-approved methodologies.
+              Expert risk assessment services that identify workplace hazards, ensure legal compliance, and protect your workforce.
             </p>
           </div>
         </div>
@@ -37,7 +37,7 @@ export default function RiskAssessmentsPage() {
                 Statutory Compliance Made Simple
               </h2>
               <p className="hampton-body text-gray-600 mb-6">
-                Our systematic approach to risk assessment ensures your organisation meets all Health and Safety Executive requirements while creating a safer workplace for your teams.
+                Our systematic approach to risk assessment ensures your organisation meets all health and safety requirements while creating a safer workplace for your teams.
               </p>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
@@ -91,7 +91,7 @@ export default function RiskAssessmentsPage() {
             <Card className="hampton-card-hover">
               <CardHeader>
                 <CardTitle className="text-hampton-blue">General Workplace</CardTitle>
-                <CardDescription>Comprehensive workplace risk identification</CardDescription>
+                <CardDescription>Comprehensive workplace risk identification, including</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-gray-600">
@@ -121,7 +121,7 @@ export default function RiskAssessmentsPage() {
             <Card className="hampton-card-hover">
               <CardHeader>
                 <CardTitle className="text-hampton-blue">COSHH Assessments</CardTitle>
-                <CardDescription>Chemical and substance safety</CardDescription>
+                <CardDescription>Hazardous substance safety</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-gray-600">
@@ -135,15 +135,15 @@ export default function RiskAssessmentsPage() {
 
             <Card className="hampton-card-hover">
               <CardHeader>
-                <CardTitle className="text-hampton-blue">Noise Assessments</CardTitle>
-                <CardDescription>Workplace noise level evaluation</CardDescription>
+                <CardTitle className="text-hampton-blue">Common Workplace Hazards</CardTitle>
+                <CardDescription>Manual handling and working at height</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• Sound level measurements</li>
-                  <li>• Exposure calculations</li>
-                  <li>• Control recommendations</li>
-                  <li>• Hearing protection advice</li>
+                  <li>• Manual handling assessments</li>
+                  <li>• Working at height evaluation</li>
+                  <li>• Control measures</li>
+                  <li>• Safety equipment requirements</li>
                 </ul>
               </CardContent>
             </Card>
@@ -239,7 +239,7 @@ export default function RiskAssessmentsPage() {
             <Button asChild size="lg" className="bg-white text-hampton-blue hover:bg-gray-100">
               <Link href="/contact">Request Risk Assessment Quote</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-hampton-blue">
+            <Button asChild size="lg" variant="outline" className="border-white text-white bg-transparent hover:bg-white/10">
               <Link href="/services/consultancy">Explore Consultancy Services</Link>
             </Button>
           </div>

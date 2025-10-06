@@ -50,8 +50,8 @@ export default function Footer() {
             <p className="text-gray-400 text-sm mb-4">
               Ready to improve your workplace safety?
             </p>
-            <Button variant="outline" className="text-black border-white hover:bg-white" asChild>
-              <Link href="/contact">Free Consultation</Link>
+            <Button variant="outline" className="text-white border-white bg-transparent hover:bg-white/10" asChild>
+              <Link href="/contact">Request a Consultation</Link>
             </Button>
           </div>
         </div>

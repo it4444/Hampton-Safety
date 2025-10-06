@@ -4,8 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
-import Image from 'next/image'
-import { Shield, CheckCircle, Users, Award, FileText, Phone, Target } from 'lucide-react'
+import { Shield, CheckCircle, Users, Award, Clock, FileText, Phone, Target } from 'lucide-react'
 
 export default function ConsultancyPage() {
   return (
@@ -56,7 +55,7 @@ export default function ConsultancyPage() {
                   <CheckCircle className="w-5 h-5 text-hampton-blue mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-gray-900">Senior Consultant Access</p>
-                    <p className="text-sm text-gray-600">Direct access to experienced professionals, not junior staff</p>
+                    <p className="text-sm text-gray-600">Direct access to experienced professionals</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -68,14 +67,13 @@ export default function ConsultancyPage() {
                 </div>
               </div>
             </div>
-            <div className="relative">
-              <Image
-                src="/images/health-and-safety.png"
-                alt="Your Dedicated Safety Partner - Health and Safety Consultancy"
-                width={600}
-                height={400}
-                className="rounded-lg w-full h-auto object-cover"
-              />
+            <div className="hampton-image-hero">
+              <div className="flex items-center justify-center h-full">
+                <div className="text-center">
+                  <Users className="w-16 h-16 text-hampton-blue/50 mx-auto mb-4" />
+                  <p className="text-hampton-blue/70 font-medium">Your Extended Safety Team</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -155,7 +153,7 @@ export default function ConsultancyPage() {
                   Ongoing support and guidance for your team on H&S matters.
                 </p>
                 <ul className="space-y-1 text-sm text-gray-600">
-                  <li>• H&S committee support</li>
+                  <li>• Increase staff competencies</li>
                   <li>• Toolbox talks</li>
                   <li>• Incident investigation</li>
                 </ul>
@@ -182,14 +180,14 @@ export default function ConsultancyPage() {
             <Card className="hampton-card-hover">
               <CardHeader>
                 <Phone className="w-8 h-8 text-hampton-blue mb-2" />
-                <CardTitle className="text-hampton-blue">24/7 Support</CardTitle>
+                <CardTitle className="text-hampton-blue">Support</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-gray-600 mb-3">
-                  Round-the-clock access to expert advice when you need it most.
+                  Access to expert advice during business hours when you need it most.
                 </p>
                 <ul className="space-y-1 text-sm text-gray-600">
-                  <li>• Emergency helpline</li>
+                  <li>• Support helpline</li>
                   <li>• Incident response</li>
                   <li>• Expert guidance</li>
                 </ul>
@@ -232,13 +230,13 @@ export default function ConsultancyPage() {
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-hampton-green mt-1 flex-shrink-0" />
                   <p className="hampton-body">
-                    <span className="font-semibold">IOSH Accredited:</span> Fully accredited by recognised industry bodies, ensuring the highest standards
+                    <span className="font-semibold">Professional Standards:</span> Operating to the highest standards with IOSH membership
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-hampton-green mt-1 flex-shrink-0" />
                   <p className="hampton-body">
-                    <span className="font-semibold">Partnership Approach:</span> We&apos;re here to build lasting partnerships that protect your people and enhance productivity
+                    <span className="font-semibold">Partnership Approach:</span> We're here to build lasting partnerships that protect your people and enhance productivity
                   </p>
                 </div>
               </div>
@@ -371,10 +369,6 @@ export default function ConsultancyPage() {
                     <CheckCircle className="w-4 h-4 text-hampton-green mr-2 mt-0.5 flex-shrink-0" />
                     <span>Incident investigation</span>
                   </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="w-4 h-4 text-hampton-green mr-2 mt-0.5 flex-shrink-0" />
-                    <span>24/7 emergency support</span>
-                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -388,7 +382,7 @@ export default function ConsultancyPage() {
                 <ul className="space-y-2 text-sm">
                   <li className="flex items-start">
                     <CheckCircle className="w-4 h-4 text-hampton-green mr-2 mt-0.5 flex-shrink-0" />
-                    <span>Weekly/fortnightly visits</span>
+                    <span>Regular visits</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle className="w-4 h-4 text-hampton-green mr-2 mt-0.5 flex-shrink-0" />
@@ -425,9 +419,9 @@ export default function ConsultancyPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-white text-hampton-blue hover:bg-gray-100">
-              <Link href="/contact">Schedule Free Consultation</Link>
+              <Link href="/contact">Request a Consultation</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-hampton-blue">
+            <Button asChild size="lg" variant="outline" className="border-white text-white bg-transparent hover:bg-white/10">
               <Link href="/services/training">View Training Services</Link>
             </Button>
           </div>

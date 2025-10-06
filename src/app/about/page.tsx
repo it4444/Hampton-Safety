@@ -84,98 +84,11 @@ export default function About() {
               </CardHeader>
               <CardContent>
                 <p className="hampton-body">
-                  With years of experience on complex projects including London Underground and
-                  national rail networks, we bring expertise to every client we work with.
+                  With years of experience on blue chip and national infrastructure projects,
+                  we bring expertise to every client we work with.
                 </p>
               </CardContent>
             </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Overview */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="hampton-heading-lg text-gray-900 mb-8 text-center">
-              Comprehensive Health & Safety Services
-            </h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="hampton-heading-md mb-4 flex items-center">
-                  <Shield className="mr-2 h-5 w-5 text-hampton-blue" />
-                  Consultancy Services
-                </h3>
-                <p className="hampton-body mb-4">
-                  Appoint Hampton Safety Ltd as your retained Health and Safety consultant to help
-                  fulfil your statutory requirements with regular site visits and compliance monitoring.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="hampton-heading-md mb-4 flex items-center">
-                  <CheckCircle className="mr-2 h-5 w-5 text-hampton-blue" />
-                  Safety Audits & Risk Assessments
-                </h3>
-                <p className="hampton-body mb-4">
-                  We conduct comprehensive assessments to identify potential risks and recommend
-                  measures to mitigate them, ensuring compliance with current legislation.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="hampton-heading-md mb-4 flex items-center">
-                  <Award className="mr-2 h-5 w-5 text-hampton-blue" />
-                  Management Systems Support
-                </h3>
-                <p className="hampton-body mb-4">
-                  Achieving industry-standard management system certifications proves your commitment
-                  to best practice and enhances your competitiveness in tenders and prequalifications.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="hampton-heading-md mb-4 flex items-center">
-                  <Users className="mr-2 h-5 w-5 text-hampton-blue" />
-                  Training Programmes
-                </h3>
-                <p className="hampton-body mb-4">
-                  We are a licensed training centre for IOSH with regular Managing Safely courses.
-                  We also offer many shorter courses tailored to suit your exact requirements.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Experience & Expertise */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="hampton-heading-lg text-gray-900 mb-8">
-              Experience & Expertise
-            </h2>
-            <p className="hampton-body-lg mb-12">
-              With years of experience, Hampton Safety Ltd has worked on some of the UK&apos;s most complex
-              and high-risk projects, including major infrastructure initiatives ranging from the London
-              Underground and national rail networks through to smaller companies working in construction and retail.
-            </p>
-
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-hampton-blue mb-2">15+</div>
-                <div className="text-gray-600">Years Experience</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-hampton-blue mb-2">100+</div>
-                <div className="text-gray-600">Projects Completed</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-hampton-blue mb-2">IOSH</div>
-                <div className="text-gray-600">Accredited Training</div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -233,7 +146,7 @@ export default function About() {
               Accreditations and Trust
             </h2>
             <p className="hampton-body-lg mb-12">
-              Hampton Safety Ltd is fully accredited by recognised industry bodies such as IOSH.
+              Our company operates to the highest standards with IOSH membership.
               Our training courses and consultancy services meet the highest standards of safety and compliance.
             </p>
 
@@ -277,11 +190,11 @@ export default function About() {
             Ready to transform your workplace into a safer, more productive environment?
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Contact us today to schedule your free consultation and discover how Hampton Safety Ltd
+            Contact us today to schedule your consultation and discover how Hampton Safety Ltd
             can help you achieve peace of mind while meeting all your health and safety obligations.
           </p>
-          <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-gray-900">
-            <Link href="/contact">Get Free Consultation</Link>
+          <Button size="lg" variant="outline" className="text-white border-white bg-transparent hover:bg-white/10" asChild>
+            <Link href="/contact">Request a Consultation</Link>
           </Button>
         </div>
       </section>

@@ -188,7 +188,7 @@ export default function ManagementSystemsPage() {
                 </p>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li>• Current system documentation review</li>
-                  <li>• Stakeholder interviews and workshops</li>
+                  <li>• Stakeholder interviews</li>
                   <li>• Gap analysis report with prioritised actions</li>
                   <li>• Implementation timeline and resource planning</li>
                 </ul>
@@ -278,35 +278,6 @@ export default function ManagementSystemsPage() {
         </div>
       </section>
 
-      {/* Statistics Section */}
-      <section className="py-16 bg-hampton-light">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="hampton-heading-lg text-gray-900 mb-4">
-              Proven Track Record
-            </h2>
-            <p className="hampton-body text-gray-600">
-              Our management system implementation success rate speaks for itself
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="hampton-metric text-center">
-              <div className="hampton-metric-number">95%</div>
-              <p className="text-gray-700 font-medium">First-time certification success rate</p>
-            </div>
-            <div className="hampton-metric text-center">
-              <div className="hampton-metric-number">12</div>
-              <p className="text-gray-700 font-medium">Average months to certification</p>
-            </div>
-            <div className="hampton-metric text-center">
-              <div className="hampton-metric-number">150+</div>
-              <p className="text-gray-700 font-medium">Organisations successfully certified</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA Section */}
       <section className="py-16 hampton-gradient-primary">
         <div className="container mx-auto px-4 text-center">
@@ -320,7 +291,7 @@ export default function ManagementSystemsPage() {
             <Button asChild size="lg" className="bg-white text-hampton-blue hover:bg-gray-100">
               <Link href="/contact">Request Management System Consultation</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-hampton-blue">
+            <Button asChild size="lg" variant="outline" className="border-white text-white bg-transparent hover:bg-white/10">
               <Link href="/services/training">Explore Training Services</Link>
             </Button>
           </div>

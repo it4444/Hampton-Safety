@@ -98,7 +98,7 @@ export default function TrainingPage() {
                 <div className="space-y-3">
                   <div className="flex items-center text-sm text-gray-600">
                     <Clock className="w-4 h-4 mr-2" />
-                    <span>4 days</span>
+                    <span>3 days</span>
                   </div>
                   <p className="text-sm text-gray-600">
                     Internationally recognised qualification covering legal responsibilities, risk management, and safety leadership.
@@ -141,22 +141,22 @@ export default function TrainingPage() {
             <Card className="hampton-card-hover">
               <CardHeader>
                 <Shield className="w-8 h-8 text-hampton-blue mb-2" />
-                <CardTitle className="text-hampton-blue">NEBOSH General Certificate</CardTitle>
-                <CardDescription>Foundation-level qualification</CardDescription>
+                <CardTitle className="text-hampton-blue">Working at Height</CardTitle>
+                <CardDescription>Safe working at height practices</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
                   <div className="flex items-center text-sm text-gray-600">
                     <Clock className="w-4 h-4 mr-2" />
-                    <span>10 days</span>
+                    <span>1 day</span>
                   </div>
                   <p className="text-sm text-gray-600">
-                    Comprehensive introduction to health and safety management for those with safety responsibilities.
+                    Essential training covering safe working at height practices and legal requirements.
                   </p>
                   <ul className="space-y-1 text-xs text-gray-600">
                     <li>• Legal framework and duties</li>
                     <li>• Risk assessment principles</li>
-                    <li>• Workplace hazards</li>
+                    <li>• Work at height hazards</li>
                     <li>• Control measures and monitoring</li>
                   </ul>
                 </div>
@@ -166,23 +166,23 @@ export default function TrainingPage() {
             <Card className="hampton-card-hover">
               <CardHeader>
                 <Users className="w-8 h-8 text-hampton-blue mb-2" />
-                <CardTitle className="text-hampton-blue">First Aid Training</CardTitle>
-                <CardDescription>Emergency response skills</CardDescription>
+                <CardTitle className="text-hampton-blue">Face Fit Training</CardTitle>
+                <CardDescription>Respiratory protection equipment</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
                   <div className="flex items-center text-sm text-gray-600">
                     <Clock className="w-4 h-4 mr-2" />
-                    <span>1-3 days</span>
+                    <span>Half day</span>
                   </div>
                   <p className="text-sm text-gray-600">
-                    HSE-approved first aid courses from basic awareness to full first aid at work certification.
+                    Essential face fit testing ensuring proper respiratory protection equipment fit.
                   </p>
                   <ul className="space-y-1 text-xs text-gray-600">
-                    <li>• Emergency action procedures</li>
-                    <li>• CPR and AED use</li>
-                    <li>• Injury and illness management</li>
-                    <li>• Record keeping requirements</li>
+                    <li>• Why Face Fit</li>
+                    <li>• Legal duties</li>
+                    <li>• Risks and controls measures</li>
+                    <li>• Face fitting</li>
                   </ul>
                 </div>
               </CardContent>
@@ -367,7 +367,7 @@ export default function TrainingPage() {
 
           <div className="grid md:grid-cols-4 gap-8">
             <div className="hampton-metric text-center">
-              <div className="hampton-metric-number">2,500+</div>
+              <div className="hampton-metric-number">500+</div>
               <p className="text-gray-700 font-medium">Delegates trained annually</p>
             </div>
             <div className="hampton-metric text-center">
@@ -379,7 +379,7 @@ export default function TrainingPage() {
               <p className="text-gray-700 font-medium">First-time pass rate</p>
             </div>
             <div className="hampton-metric text-center">
-              <div className="hampton-metric-number">50+</div>
+              <div className="hampton-metric-number">20+</div>
               <p className="text-gray-700 font-medium">Different course offerings</p>
             </div>
           </div>
@@ -399,7 +399,7 @@ export default function TrainingPage() {
             <Button asChild size="lg" className="bg-white text-hampton-blue hover:bg-gray-100">
               <Link href="/contact">Request Training Proposal</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-hampton-blue">
+            <Button asChild size="lg" variant="outline" className="border-white text-white bg-transparent hover:bg-white/10">
               <Link href="/services/consultancy">Explore Consultancy Services</Link>
             </Button>
           </div>
