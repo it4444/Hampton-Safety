@@ -48,7 +48,7 @@ export default function Home() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="hampton-button-primary" asChild>
-                  <Link href="/contact">Get Consultation</Link>
+                  <Link href="/contact">Request a Consultation</Link>
                 </Button>
                 <Button variant="outline" size="lg" className="group border-hampton-blue text-hampton-blue hover:bg-hampton-blue hover:text-white" asChild>
                   <Link href="/contact">
@@ -65,11 +65,7 @@ export default function Home() {
                     <div className="w-8 h-8 bg-hampton-green rounded-full border-2 border-white"></div>
                     <div className="w-8 h-8 bg-hampton-medium rounded-full border-2 border-white"></div>
                   </div>
-                  <span className="ml-3 text-sm text-gray-600">Trusted by 100+ businesses</span>
-                </div>
-                <div className="flex items-center">
-                  <Star className="h-4 w-4 text-hampton-green fill-current" />
-                  <span className="ml-1 text-sm text-gray-600">5-star service</span>
+                  <span className="ml-3 text-sm text-gray-600">Trusted by blue-chip clients and governmental departments</span>
                 </div>
               </div>
             </motion.div>
@@ -80,36 +76,14 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative"
             >
-              <Card className="hampton-card-premium">
-                <CardHeader>
-                  <CardTitle className="flex items-center hampton-heading-md">
-                    <Shield className="mr-2 h-5 w-5 text-hampton-blue" />
-                    Quick Compliance Check
-                  </CardTitle>
-                  <CardDescription>
-                    Does your business meet current H&S requirements?
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm">Risk Assessments Updated</span>
-                      <CheckCircle className="h-4 w-4 text-hampton-green" />
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm">Staff Training Current</span>
-                      <CheckCircle className="h-4 w-4 text-hampton-green" />
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm">Management Systems Implemented</span>
-                      <X className="h-4 w-4 text-red-500" />
-                    </div>
-                    <Button className="w-full mt-4" variant="outline" asChild>
-                      <Link href="/contact">Get Consultation</Link>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
+              <Image
+                src="/images/Hampton safety_factory..png"
+                alt="Hampton Safety consultant providing professional health and safety consultancy services"
+                width={600}
+                height={600}
+                className="rounded-lg shadow-xl w-full h-auto"
+                priority
+              />
             </motion.div>
           </div>
         </div>
@@ -207,13 +181,13 @@ export default function Home() {
                 </div>
                 <CardTitle className="hampton-heading-md">Safety Training</CardTitle>
                 <CardDescription>
-                  IOSH-accredited courses delivered on-site to your team
+                  Safety training on and off-site to your team
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="text-sm text-gray-600 space-y-1">
                   <li>• Managing Safely courses</li>
-                  <li>• Face-fit testing</li>
+                  <li>• <Link href="/services/training" className="text-hampton-blue hover:underline">Full list available here</Link></li>
                   <li>• Bespoke programs</li>
                 </ul>
                 <Button variant="ghost" className="mt-4 p-0 h-auto group-hover:translate-x-1 transition-transform">
@@ -295,10 +269,10 @@ export default function Home() {
                     </div>
                     <div className="flex items-center">
                       <CheckCircle className="h-4 w-4 text-hampton-blue mr-2" />
-                      <span className="text-sm hampton-body">No obligation quote</span>
+                      <span className="text-sm hampton-body text-hampton-blue">Same-day response</span>
                     </div>
                     <Button className="w-full" size="lg" asChild>
-                      <Link href="/contact">Get Consultation</Link>
+                      <Link href="/contact">Request a Consultation</Link>
                     </Button>
                   </div>
                 </CardContent>
