@@ -14,7 +14,12 @@ import {
   ArrowRight,
   Phone,
   Clock,
-  Star
+  Star,
+  GraduationCap,
+  BookOpen,
+  Briefcase,
+  Heart,
+  Utensils
 } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -202,6 +207,89 @@ export default function Home() {
                 </Button>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Online Training Section */}
+      <section className="relative py-20 overflow-hidden bg-gradient-to-br from-hampton-light via-white to-hampton-green/5">
+        <div className="absolute inset-0 bg-gradient-to-br from-hampton-blue/5 via-transparent to-hampton-green/5"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-5xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-center"
+            >
+              <Badge className="mb-6 bg-hampton-green/10 text-hampton-green border-hampton-green/20">
+                <GraduationCap className="mr-2 h-4 w-4" />
+                140+ Professional Courses
+              </Badge>
+
+              <h2 className="hampton-heading-lg text-gray-900 mb-4">
+                Professional Online Training
+              </h2>
+
+              <p className="hampton-body-lg max-w-3xl mx-auto mb-8 text-gray-700">
+                Study at your own pace with our comprehensive e-learning platform. From IOSH and NEBOSH
+                qualifications to Fire Safety, Food Hygiene, and Mental Health awareness courses.
+              </p>
+
+              {/* Category Preview Icons */}
+              <div className="flex flex-wrap justify-center gap-6 mb-10">
+                <div className="flex flex-col items-center">
+                  <div className="w-14 h-14 rounded-full bg-hampton-blue/10 flex items-center justify-center mb-2">
+                    <Shield className="h-7 w-7 text-hampton-blue" />
+                  </div>
+                  <span className="text-sm text-gray-600">Health & Safety</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="w-14 h-14 rounded-full bg-hampton-blue/10 flex items-center justify-center mb-2">
+                    <Briefcase className="h-7 w-7 text-hampton-blue" />
+                  </div>
+                  <span className="text-sm text-gray-600">Business Skills</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="w-14 h-14 rounded-full bg-hampton-blue/10 flex items-center justify-center mb-2">
+                    <Heart className="h-7 w-7 text-hampton-blue" />
+                  </div>
+                  <span className="text-sm text-gray-600">Health & Social Care</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="w-14 h-14 rounded-full bg-hampton-blue/10 flex items-center justify-center mb-2">
+                    <BookOpen className="h-7 w-7 text-hampton-blue" />
+                  </div>
+                  <span className="text-sm text-gray-600">Mental Health</span>
+                </div>
+                <div className="flex flex-col items-center">
+                  <div className="w-14 h-14 rounded-full bg-hampton-blue/10 flex items-center justify-center mb-2">
+                    <Utensils className="h-7 w-7 text-hampton-blue" />
+                  </div>
+                  <span className="text-sm text-gray-600">Hospitality</span>
+                </div>
+              </div>
+
+              {/* CTA Button with Green Glow */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
+                <Button
+                  size="lg"
+                  className="hampton-button-primary shadow-lg shadow-hampton-green/20 hover:shadow-xl hover:shadow-hampton-green/30 transition-all"
+                  asChild
+                >
+                  <Link href="/training">
+                    Browse Online Training Courses
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
       </section>

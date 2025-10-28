@@ -86,6 +86,14 @@ export default function Navigation() {
 
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
+                    <Link href="/training" className="px-4 py-2 text-base font-medium text-gray-900 hover:text-hampton-blue">
+                      Online Training
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                  <NavigationMenuLink asChild>
                     <Link href="/about" className="px-4 py-2 text-base font-medium text-gray-900 hover:text-hampton-blue">
                       About
                     </Link>
@@ -201,6 +209,14 @@ export default function Navigation() {
               </div>
             )}
           </div>
+
+          <Link
+            href="/training"
+            className="px-4 py-3 text-base font-medium text-gray-900 hover:bg-hampton-light rounded-lg transition-colors"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Online Training
+          </Link>
 
           <Link
             href="/about"
