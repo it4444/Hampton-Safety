@@ -127,7 +127,7 @@ export default function TrainingCatalogue({ coursesByCategory }: TrainingCatalog
               <GraduationCap className="h-16 w-16 text-gray-400 mx-auto mb-4" />
               <h2 className="hampton-heading-lg text-gray-600 mb-2">No Courses Found</h2>
               <p className="hampton-body text-gray-500 mb-6">
-                Try adjusting your search or filter to find what you're looking for.
+                Try adjusting your search or filter to find what you&apos;re looking for.
               </p>
               <Button
                 onClick={() => {
@@ -152,7 +152,7 @@ export default function TrainingCatalogue({ coursesByCategory }: TrainingCatalog
                     {searchQuery && (
                       <>
                         {' '}
-                        matching "<span className="font-semibold">{searchQuery}</span>"
+                        matching &ldquo;<span className="font-semibold">{searchQuery}</span>&rdquo;
                       </>
                     )}
                   </p>

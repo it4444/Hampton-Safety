@@ -3,6 +3,7 @@ import Footer from '@/components/Footer'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import Link from 'next/link'
+import Image from 'next/image'
 import { GraduationCap, Users, Clock, CheckCircle, BookOpen, Shield } from 'lucide-react'
 
 export default function TrainingPage() {
@@ -63,13 +64,15 @@ export default function TrainingPage() {
                 </div>
               </div>
             </div>
-            <div className="hampton-image-hero">
-              <div className="flex items-center justify-center h-full">
-                <div className="text-center">
-                  <GraduationCap className="w-16 h-16 text-hampton-blue/50 mx-auto mb-4" />
-                  <p className="text-hampton-blue/70 font-medium">Professional Training Excellence</p>
-                </div>
-              </div>
+            <div className="relative aspect-video w-full min-h-[250px] md:min-h-[400px] rounded-lg overflow-hidden">
+              <Image
+                src="/images/services/training-hero.png"
+                alt="Professional instructor delivering health and safety training to engaged group"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
             </div>
           </div>
         </div>

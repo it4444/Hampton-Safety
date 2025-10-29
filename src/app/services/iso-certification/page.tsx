@@ -3,6 +3,7 @@ import Footer from '@/components/Footer'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Award, CheckCircle, Target, Users, FileCheck, Clock } from 'lucide-react'
 
 export default function ManagementSystemsPage() {
@@ -63,13 +64,15 @@ export default function ManagementSystemsPage() {
                 </div>
               </div>
             </div>
-            <div className="hampton-image-hero">
-              <div className="flex items-center justify-center h-full">
-                <div className="text-center">
-                  <Award className="w-16 h-16 text-hampton-blue/50 mx-auto mb-4" />
-                  <p className="text-hampton-blue/70 font-medium">Management Systems Excellence</p>
-                </div>
-              </div>
+            <div className="relative aspect-video w-full min-h-[250px] md:min-h-[400px] rounded-lg overflow-hidden">
+              <Image
+                src="/images/services/iso-certification-hero.png"
+                alt="Professional reviewing ISO certification documentation and quality management materials"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
             </div>
           </div>
         </div>
@@ -193,18 +196,26 @@ export default function ManagementSystemsPage() {
                   <li>• Implementation timeline and resource planning</li>
                 </ul>
               </div>
-              <div className="hampton-image-card md:order-2">
-                <div className="flex items-center justify-center h-full">
-                  <FileCheck className="w-12 h-12 text-hampton-blue/50" />
-                </div>
+              <div className="relative aspect-[4/3] w-full rounded-lg overflow-hidden md:order-2">
+                <Image
+                  src="/images/services/gap-analysis.png"
+                  alt="Gap analysis documentation and assessment process"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="hampton-image-card">
-                <div className="flex items-center justify-center h-full">
-                  <Users className="w-12 h-12 text-hampton-blue/50" />
-                </div>
+              <div className="relative aspect-[4/3] w-full rounded-lg overflow-hidden">
+                <Image
+                  src="/images/services/system-development.png"
+                  alt="System development and documentation process"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div>
                 <div className="flex items-center mb-4">
@@ -243,18 +254,26 @@ export default function ManagementSystemsPage() {
                   <li>• System monitoring and adjustment</li>
                 </ul>
               </div>
-              <div className="hampton-image-card md:order-2">
-                <div className="flex items-center justify-center h-full">
-                  <Target className="w-12 h-12 text-hampton-blue/50" />
-                </div>
+              <div className="relative aspect-[4/3] w-full rounded-lg overflow-hidden md:order-2">
+                <Image
+                  src="/images/services/training-implementation.png"
+                  alt="Training and implementation with team engagement"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="hampton-image-card">
-                <div className="flex items-center justify-center h-full">
-                  <Award className="w-12 h-12 text-hampton-blue/50" />
-                </div>
+              <div className="relative aspect-[4/3] w-full rounded-lg overflow-hidden">
+                <Image
+                  src="/images/services/certification-support.png"
+                  alt="Certification support and audit preparation"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div>
                 <div className="flex items-center mb-4">

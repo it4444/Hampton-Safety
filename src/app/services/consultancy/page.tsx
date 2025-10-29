@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Shield, CheckCircle, Users, Award, FileText, Phone, Target } from 'lucide-react'
 
 export default function ConsultancyPage() {
@@ -67,13 +68,15 @@ export default function ConsultancyPage() {
                 </div>
               </div>
             </div>
-            <div className="hampton-image-hero">
-              <div className="flex items-center justify-center h-full">
-                <div className="text-center">
-                  <Users className="w-16 h-16 text-hampton-blue/50 mx-auto mb-4" />
-                  <p className="text-hampton-blue/70 font-medium">Your Extended Safety Team</p>
-                </div>
-              </div>
+            <div className="relative aspect-video w-full min-h-[250px] md:min-h-[400px] rounded-lg overflow-hidden">
+              <Image
+                src="/images/services/consultancy-hero.png"
+                alt="Professional health and safety consultant in collaborative meeting with business team"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
             </div>
           </div>
         </div>
@@ -201,10 +204,14 @@ export default function ConsultancyPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="hampton-image-card">
-              <div className="flex items-center justify-center h-full">
-                <Award className="w-12 h-12 text-hampton-blue/50" />
-              </div>
+            <div className="relative aspect-[4/3] w-full rounded-lg overflow-hidden">
+              <Image
+                src="/images/services/consultancy-why-choose.png"
+                alt="Professional safety consultant in modern office with certifications"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
             </div>
             <div>
               <h2 className="hampton-heading-lg text-gray-900 mb-6">

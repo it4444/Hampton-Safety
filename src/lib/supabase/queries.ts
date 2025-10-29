@@ -6,7 +6,6 @@ import { supabase } from './client';
 import type {
   Category,
   Course,
-  CourseAsset,
   CourseWithCategory,
   CoursesByCategory
 } from '@/types/training';
