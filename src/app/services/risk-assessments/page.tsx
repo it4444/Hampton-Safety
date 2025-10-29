@@ -64,13 +64,15 @@ export default function RiskAssessmentsPage() {
                 </div>
               </div>
             </div>
-            <div className="hampton-image-hero">
-              <div className="flex items-center justify-center h-full">
-                <div className="text-center">
-                  <FileText className="w-16 h-16 text-hampton-blue/50 mx-auto mb-4" />
-                  <p className="text-hampton-blue/70 font-medium">Professional Risk Assessment Documentation</p>
-                </div>
-              </div>
+            <div className="relative aspect-video w-full min-h-[250px] md:min-h-[400px] rounded-lg overflow-hidden">
+              <Image
+                src="/images/services/risk-assessments-hero.png"
+                alt="Professional consultant reviewing risk assessment documentation with laptop and organized binders"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
             </div>
           </div>
         </div>
