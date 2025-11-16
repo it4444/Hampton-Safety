@@ -35,7 +35,7 @@ export default function ManagementSystemsPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="hampton-heading-lg text-gray-900 mb-6">
-                World-Class Management Systems
+                Management Systems
               </h2>
               <p className="hampton-body text-gray-600 mb-6">
                 A robust management system helps organisations improve performance, meet compliance requirements, and demonstrate commitment to best practice. Our consultants provide end-to-end support tailored to your industry and certification goals.

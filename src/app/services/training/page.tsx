@@ -45,7 +45,7 @@ export default function TrainingPage() {
                   <CheckCircle className="w-5 h-5 text-hampton-blue mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-gray-900">Accredited Programmes</p>
-                    <p className="text-sm text-gray-600">IOSH, NEBOSH, and industry-recognised qualifications</p>
+                    <p className="text-sm text-gray-600">IOSH and industry-recognised qualifications</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -149,10 +149,6 @@ export default function TrainingPage() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
-                  <div className="flex items-center text-sm text-gray-600">
-                    <Clock className="w-4 h-4 mr-2" />
-                    <span>1 day</span>
-                  </div>
                   <p className="text-sm text-gray-600">
                     Essential training covering safe working at height practices and legal requirements.
                   </p>
@@ -174,10 +170,6 @@ export default function TrainingPage() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
-                  <div className="flex items-center text-sm text-gray-600">
-                    <Clock className="w-4 h-4 mr-2" />
-                    <span>Half day</span>
-                  </div>
                   <p className="text-sm text-gray-600">
                     Essential face fit testing ensuring proper respiratory protection equipment fit.
                   </p>
@@ -199,10 +191,6 @@ export default function TrainingPage() {
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
-                  <div className="flex items-center text-sm text-gray-600">
-                    <Clock className="w-4 h-4 mr-2" />
-                    <span>Half day</span>
-                  </div>
                   <p className="text-sm text-gray-600">
                     Comprehensive fire safety awareness including prevention, evacuation procedures, and fire warden training.
                   </p>
@@ -374,16 +362,16 @@ export default function TrainingPage() {
               <p className="text-gray-700 font-medium">Delegates trained annually</p>
             </div>
             <div className="hampton-metric text-center">
-              <div className="hampton-metric-number">98%</div>
-              <p className="text-gray-700 font-medium">Course satisfaction rating</p>
+              <div className="hampton-metric-number">Highest</div>
+              <p className="text-gray-700 font-medium">Highest course satisfaction rating</p>
             </div>
             <div className="hampton-metric text-center">
-              <div className="hampton-metric-number">95%</div>
-              <p className="text-gray-700 font-medium">First-time pass rate</p>
+              <div className="hampton-metric-number">Best in industry</div>
+              <p className="text-gray-700 font-medium">Best in industry first time pass rate</p>
             </div>
             <div className="hampton-metric text-center">
-              <div className="hampton-metric-number">20+</div>
-              <p className="text-gray-700 font-medium">Different course offerings</p>
+              <div className="hampton-metric-number">100+</div>
+              <p className="text-gray-700 font-medium">Diff course offerings</p>
             </div>
           </div>
         </div>

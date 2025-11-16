@@ -98,7 +98,7 @@ export default function RiskAssessmentsPage() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• Slip, trip and fall hazards</li>
+                  <li>• Comprehensive workplace/document assessments</li>
                   <li>• Manual handling assessments</li>
                   <li>• Workstation evaluations</li>
                   <li>• Environmental factors</li>
@@ -158,7 +158,7 @@ export default function RiskAssessmentsPage() {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 text-sm text-gray-600">
-                  <li>• CDM Regulation compliance</li>
+                  <li>• Regular site inspections</li>
                   <li>• Working at height risks</li>
                   <li>• Plant and machinery safety</li>
                   <li>• Site-specific hazards</li>

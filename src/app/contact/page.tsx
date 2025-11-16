@@ -92,7 +92,7 @@ export default function Contact() {
                     <Phone className="h-8 w-8 text-hampton-blue mr-4" />
                     <div>
                       <h3 className="hampton-heading-md">Phone</h3>
-                      <p className="hampton-body">[Insert Phone Number]</p>
+                      <p className="hampton-body">07862 236213</p>
                       <p className="text-sm text-gray-500">Call for immediate consultation</p>
                     </div>
                   </CardContent>
@@ -103,7 +103,7 @@ export default function Contact() {
                     <Mail className="h-8 w-8 text-hampton-blue mr-4" />
                     <div>
                       <h3 className="hampton-heading-md">Email</h3>
-                      <p className="hampton-body">[Insert Email Address]</p>
+                      <p className="hampton-body">contact@hamptonsafety.co.uk</p>
                       <p className="text-sm text-gray-500">We respond within 24 hours</p>
                     </div>
                   </CardContent>
@@ -114,7 +114,7 @@ export default function Contact() {
                     <MapPin className="h-8 w-8 text-hampton-blue mr-4" />
                     <div>
                       <h3 className="hampton-heading-md">Office Address</h3>
-                      <p className="hampton-body">1426 Robinson South, Wembley Park, London, HA9 0UE</p>
+                      <p className="hampton-body">First Way, Wembley Park, London, HA9 0UE</p>
                       <p className="text-sm text-gray-500">Serving businesses across the UK</p>
                     </div>
                   </CardContent>
@@ -374,7 +374,7 @@ export default function Contact() {
                     <li>• Site visits and assessments</li>
                     <li>• On-site training delivery</li>
                     <li>• Risk assessment walkthrough</li>
-                    <li>• Face-fit testing sessions</li>
+                    <li>• Incident Investigation</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -408,7 +408,7 @@ export default function Contact() {
             or receive tailored consultancy, Hampton Safety Ltd has the expertise to guide you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-gray-900">
+            <Button size="lg" variant="outline" className="text-gray-900 border-white hover:bg-white hover:text-gray-900">
               Call Now
             </Button>
             <Button size="lg" className="bg-hampton-green hover:bg-hampton-green/90 text-white">

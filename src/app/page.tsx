@@ -69,7 +69,7 @@ export default function Home() {
                     <div className="w-8 h-8 bg-hampton-green rounded-full border-2 border-white"></div>
                     <div className="w-8 h-8 bg-hampton-medium rounded-full border-2 border-white"></div>
                   </div>
-                  <span className="ml-3 text-sm text-gray-600">Trusted by blue-chip clients and governmental departments</span>
+                  <span className="ml-3 text-sm text-gray-600">Trusted by blue-chip clients across all industries</span>
                 </div>
               </div>
             </motion.div>
@@ -233,7 +233,7 @@ export default function Home() {
               </h2>
 
               <p className="hampton-body-lg max-w-3xl mx-auto mb-8 text-gray-700">
-                Study at your own pace with our comprehensive e-learning platform. From IOSH and NEBOSH
+                Study at your own pace with our comprehensive e-learning platform. From IOSH
                 qualifications to Fire Safety, Food Hygiene, and Mental Health awareness courses.
               </p>
 

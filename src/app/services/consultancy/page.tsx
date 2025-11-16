@@ -106,7 +106,7 @@ export default function ConsultancyPage() {
                 </p>
                 <ul className="space-y-1 text-sm text-gray-600">
                   <li>• Health & Safety Policy</li>
-                  <li>• Safe systems of work</li>
+                  <li>• Regular Policy Reviews</li>
                   <li>• Emergency procedures</li>
                 </ul>
               </CardContent>
@@ -318,7 +318,7 @@ export default function ConsultancyPage() {
               Flexible Service Packages
             </h2>
             <p className="hampton-body text-gray-600 max-w-2xl mx-auto">
-              Choose the level of support that suits your business size and requirements
+              Choose the level of support that suits your business size and requirements. All retained service packages include up to 50% discount off eLearning courses.
             </p>
           </div>
 

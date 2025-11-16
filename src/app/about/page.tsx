@@ -144,7 +144,7 @@ export default function About() {
               Accreditations and Trust
             </h2>
             <p className="hampton-body-lg mb-12">
-              Our company operates to the highest standards with IOSH membership.
+              Our company operates to the highest standards with IOSH membership as a Licensed IOSH Training Centre.
               Our training courses and consultancy services meet the highest standards of safety and compliance.
             </p>
 
@@ -152,13 +152,14 @@ export default function About() {
               <Card className="text-center">
                 <CardContent className="pt-6">
                   <Award className="h-8 w-8 text-hampton-blue mx-auto mb-2" />
-                  <div className="text-sm text-gray-600">Licensed Training Centre</div>
+                  <div className="font-semibold">IOSH</div>
+                  <div className="text-sm text-gray-600">Licensed IOSH Training Centre</div>
                 </CardContent>
               </Card>
               <Card className="text-center">
                 <CardContent className="pt-6">
                   <Award className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                  <div className="font-semibold">RoSPA</div>
+                  <div className="font-semibold">IIRSM</div>
                   <div className="text-sm text-gray-600">Accredited Courses</div>
                 </CardContent>
               </Card>
@@ -173,7 +174,7 @@ export default function About() {
                 <CardContent className="pt-6">
                   <Award className="h-8 w-8 text-blue-600 mx-auto mb-2" />
                   <div className="font-semibold">CPD</div>
-                  <div className="text-sm text-gray-600">Certified Programs</div>
+                  <div className="text-sm text-gray-600">Certified Courses</div>
                 </CardContent>
               </Card>
             </div>
