@@ -318,7 +318,7 @@ export default function ConsultancyPage() {
               Flexible Service Packages
             </h2>
             <p className="hampton-body text-gray-600 max-w-2xl mx-auto">
-              Choose the level of support that suits your business size and requirements. All retained service packages include up to 50% discount off eLearning courses.
+              Choose the level of support that suits your business size and requirements. All retained service packages include up to 50% discount off <Link href="/training" className="text-hampton-blue hover:underline font-medium">eLearning courses</Link>.
             </p>
           </div>
 

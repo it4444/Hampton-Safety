@@ -362,16 +362,16 @@ export default function TrainingPage() {
               <p className="text-gray-700 font-medium">Delegates trained annually</p>
             </div>
             <div className="hampton-metric text-center">
-              <div className="hampton-metric-number">Highest</div>
-              <p className="text-gray-700 font-medium">Highest course satisfaction rating</p>
+              <div className="hampton-metric-number">Outstanding</div>
+              <p className="text-gray-700 font-medium">Course satisfaction rating</p>
             </div>
             <div className="hampton-metric text-center">
-              <div className="hampton-metric-number">Best in industry</div>
-              <p className="text-gray-700 font-medium">Best in industry first time pass rate</p>
+              <div className="hampton-metric-number">Industry-leading</div>
+              <p className="text-gray-700 font-medium">First time pass rate</p>
             </div>
             <div className="hampton-metric text-center">
               <div className="hampton-metric-number">100+</div>
-              <p className="text-gray-700 font-medium">Diff course offerings</p>
+              <p className="text-gray-700 font-medium">Course offerings</p>
             </div>
           </div>
         </div>

@@ -304,7 +304,7 @@ export default function ManagementSystemsPage() {
             Start Your Management System Journey Today
           </h2>
           <p className="hampton-body-lg text-white/90 mb-8 max-w-2xl mx-auto">
-            Join the organisations achieving world-class standards with our expert management system implementation support.
+            Join the organisations achieving excellence with our expert management system implementation support.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-white text-hampton-blue hover:bg-gray-100">
