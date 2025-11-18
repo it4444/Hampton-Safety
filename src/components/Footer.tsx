@@ -14,7 +14,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center mb-2">
               <Phone className="h-4 w-4 mr-2" />
-              <span className="text-sm">+44 20 7946 0958</span>
+              <span className="text-sm">07862 236213</span>
             </div>
             <div className="flex items-center mb-2">
               <Mail className="h-4 w-4 mr-2" />
@@ -41,7 +41,6 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-400">
               <li><Link href="/about" className="hover:text-white">About Us</Link></li>
               <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
-              <li><Link href="/case-studies" className="hover:text-white">Case Studies</Link></li>
             </ul>
           </div>
 
@@ -57,7 +56,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-          <p>&copy; 2024 Hampton Safety Ltd. All rights reserved.</p>
+          <p>&copy; 2025 Hampton Safety Ltd. All rights reserved.</p>
         </div>
       </div>
     </footer>
